@@ -19,11 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
+    scroll-behavior: smooth;
 }
 .fondo {
   position: absolute;
@@ -69,6 +65,7 @@ body {
   text-decoration: none;
   color: #ffffff;
 }
+
 .presentacion {
     width: 100%;
     max-width: 740px;
@@ -117,7 +114,11 @@ body {
 }
 
 .texto-destacado {
-  color: rgb(234, 179, 8); /* similar a text-yellow-200/90 */
+  color: rgb(226, 188, 75); /* similar a text-yellow-200/90 */
+}
+
+#experience h3.texto-destacado {
+  color: rgb(226, 188, 75); /* igual que .texto-destacado */
 }
 
 .texto-rojo {
@@ -258,4 +259,16 @@ body {
   width: 28px;
   height: 28px;
   stroke-width: 2;
+}
+
+.timeline-link-invertido {
+  background-color: #fff;
+  color: #222;
+  border: 1px solid #bbb;
+}
+
+.timeline-link-invertido:hover {
+  background-color: #f3f3f3;
+  color: #111;
+  border-color: #888;
 }
