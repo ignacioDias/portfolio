@@ -14,7 +14,7 @@ const TAGS = {
 const PROJECTS = [
     {
         title: 'MonkeyType Clone',
-        description: 'Monkeytype es una plataforma en línea para practicar mecanografía. Ofrece ejercicios de tipeo en diferentes modos (palabras, oraciones, código, etc.) y permite medir la velocidad (WPM), precisión y consistencia del usuario. Es conocida por su diseño minimalista, alta personalización y estadísticas detalladas. Es popular entre quienes quieren mejorar su velocidad de escritura y competir con otros.',
+        description: 'Monkeytype es una plataforma en línea para practicar mecanografía. Ofrece ejercicios de tipeo en diferentes modos (palabras, oraciones, código, etc.) y permite medir la velocidad (WPM), precisión y consistencia del usuario.',
         link: 'https://ignaciodias.github.io/monkeytype-clone/',
         github: 'https://github.com/ignacioDias/monkeytype-clone/',
         image: 'src/monkeytype-clone.webp',
@@ -24,23 +24,49 @@ const PROJECTS = [
 
 const projectsList = document.getElementById('projects-list');
 
-PROJECTS.forEach(({ image, title, description, tags }) => {
+PROJECTS.forEach(({ image, title, description, tags, link, github }) => {
   const article = document.createElement('article');
+    article.className = 'project-card';
 
   article.innerHTML = `
-    <h3>${title}</h3>
-    <p>${description}</p>
-    <ul class="project-tags">
-      ${tags.map(tag => `
-        <li>
-          <span class="tag-badge ${tag.class}">
-            ${tag.icon}
-            ${tag.name}
-          </span>
-        </li>
-      `).join('')}
-    </ul>
-    <img src="${image}" alt="Screenshot del proyecto ${title}" />
+    <div class="project-img-col">
+      <div class="project-image-wrapper">
+        <img 
+          src="${image}" 
+          alt="Screenshot del proyecto ${title}" 
+          class="project-image"
+          loading="lazy"
+        />
+      </div>
+    </div>
+    <div class="project-info-col">
+      <h3 class="project-title">${title}</h3>
+      <ul class="project-tags">
+        ${tags.map(tag => `
+          <li>
+            <span class="tag-badge ${tag.class}">
+              ${tag.icon}
+              ${tag.name}
+            </span>
+          </li>
+        `).join('')}
+      </ul>
+      <div class="project-description">${description}</div>
+      <footer class="project-footer">
+        ${github ? `
+          <a href="${github}" class="project-link-btn" target="_blank" rel="noopener">
+            <svg class="icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C5.27.65 4.09 1 4.09 1A5.07 5.07 0 0 0 4 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 21.13V25"></path></svg>
+            Code
+          </a>
+        ` : ''}
+        ${link ? `
+          <a href="${link}" class="project-link-btn" target="_blank" rel="noopener">
+            <svg class="icon" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M10 14L21 3m0 0v7m0-7h-7"/><path d="M21 21H3V3h7"/></svg>
+            Preview
+          </a>
+        ` : ''}
+      </footer>
+    </div>
   `;
 
   projectsList.appendChild(article);
