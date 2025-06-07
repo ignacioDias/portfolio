@@ -286,7 +286,6 @@ body {
   box-shadow: 0 8px 32px 0 rgba(255,255,255,0.10);
   max-width: 100%;
   display: block;
-  margin-top: 0; /* <--- Cambia esto a 0 */
 }
 
 /* h3 de cada proyecto */
