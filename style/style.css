@@ -286,7 +286,7 @@ body {
   box-shadow: 0 8px 32px 0 rgba(255,255,255,0.10); /* shadow-2xl shadow-white/10 */
   max-width: 100%;
   display: block;
-  margin-top: 16px;
+  margin-top: 46px;
 }
 
 /* h3 de cada proyecto */
@@ -305,4 +305,224 @@ body {
   line-height: 1.7;
   text-wrap: pretty;        /* text-pretty, soportado en navegadores modernos */
   color: #f3f3f3;
+}
+
+#projects-list ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 12px 0;
+}
+
+#projects-list ul li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.project-tags {
+  display: flex;
+  gap: 8px;           /* gap-x-2 */
+  flex-direction: row;
+  margin-bottom: 8px; /* mb-2 */
+  list-style: none;
+  padding: 0;
+}
+
+.tag-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;           /* gap-x-2 */
+  border-radius: 9999px; /* rounded-full */
+  font-size: 0.75rem; /* text-xs */
+  padding: 4px 10px;  /* py-1 px-2 */
+  font-weight: 500;
+  line-height: 1;
+}
+
+/* Ejemplo de clases para los tags, puedes personalizar más */
+.bg-yellow {
+  background: #f7e025;
+}
+.text-darkgray {
+  color: #383836;
+}
+.bg-orange {
+  background: #e44b20;
+}
+.text-white {
+  color: #fff;
+}
+
+/* Tamaño del icono dentro del tag */
+.tag-badge .icon {
+  width: 1em;
+  height: 1em;
+  min-width: 1em;
+  min-height: 1em;
+}
+
+footer {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0%, rgba(45, 45, 45, 0.3) 100%);
+    border-radius: 16px;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto 40px auto;
+    padding: 8px 48px; /* menos altura (8px vertical), más espacio horizontal (48px) */
+}
+
+/* Contenedor del footer */
+footer .w-full {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Texto del copyright */
+footer span {
+    font-size: 14px;
+    text-align: center;
+    color: rgb(254, 240, 138); /* text-yellow-200/90 */
+    opacity: 0.9;
+}
+
+/* Enlaces del copyright */
+footer span a {
+    color: rgb(254, 240, 138);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+footer span a:hover {
+    text-decoration: underline;
+}
+
+/* Lista de navegación */
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+footer ul li {
+    margin: 0;
+}
+
+/* Enlaces de navegación */
+footer ul a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+}
+
+footer ul a:hover {
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-1px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    footer .w-full {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    footer ul {
+        margin-top: 8px;
+        justify-content: center;
+    }
+    
+    footer ul a {
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        margin: 0 10px 10px 10px;
+        border-radius: 12px;
+    }
+    
+    footer .w-full {
+        padding: 15px;
+    }
+    
+    footer span {
+        font-size: 12px;
+    }
+    
+    footer ul {
+        font-size: 12px;
+    }
+}
+
+.text-yellow-200\/90 {
+    color: rgb(254, 240, 138);
+    opacity: 0.9;
+}
+
+.text-white\/90 {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.bg-black\/20 {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop-blur-lg {
+    backdrop-filter: blur(16px);
+}
+
+.xl\:w-\[1120px\] {
+    max-width: 1120px;
+}
+
+@media (min-width: 1280px) {
+    .xl\:w-\[1120px\] {
+        width: 1120px;
+    }
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links a:hover {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.footer-links .link-boton {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0%, rgba(45, 45, 45, 0.3) 100%);
+  border: none;
 }
