@@ -8,6 +8,11 @@ const TAGS = {
         name: 'HTML',
         icon: '<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-html5"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" /><path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" /></svg>',
         class: "bg-orange text-white"
+    },
+    C: {
+        name: 'C',
+        icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-brand-c"><circle cx="12" cy="12" r="10"/><path d="M16 10a4 4 0 1 0 0 4"/></svg>',
+        class: "bg-blue text-white"
     }
 }
 
@@ -19,6 +24,13 @@ const PROJECTS = [
         github: 'https://github.com/ignacioDias/monkeytype-clone/',
         image: 'src/monkeytype-clone.webp',
         tags: [TAGS.HTML, TAGS.JS]
+    },
+        {
+        title: 'Compilador',
+        description: 'Desarrollamos un compilador para un lenguaje propio. Usando Bison y Flex.',
+        github: 'https://github.com/ignacioDias/final-project-compilador',
+        image: 'src/compilator.webp',
+        tags: [TAGS.C]
     }
 ]
 
