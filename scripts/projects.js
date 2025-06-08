@@ -18,19 +18,26 @@ const TAGS = {
 
 const PROJECTS = [
     {
-        title: 'MonkeyType Clone',
-        description: 'Monkeytype es una plataforma en línea para practicar mecanografía. Ofrece ejercicios de tipeo en diferentes modos (palabras, oraciones, código, etc.) y permite medir la velocidad (WPM), precisión y consistencia del usuario.',
-        link: 'https://ignaciodias.github.io/monkeytype-clone/',
-        github: 'https://github.com/ignacioDias/monkeytype-clone/',
-        image: 'src/monkeytype-clone.webp',
-        tags: [TAGS.HTML, TAGS.JS]
-    },
-        {
         title: 'Compilador',
         description: 'Desarrollamos un compilador para un lenguaje propio. Usando Bison y Flex.',
         github: 'https://github.com/ignacioDias/final-project-compilador',
         image: 'src/compilator.webp',
         tags: [TAGS.C]
+    },
+    {
+        title: 'Implementación de Hash Table',
+        description: 'Desarrollé una implementación de dicha estructura de datos con el algoritmo FNV-1a',
+        github: 'https://github.com/ignacioDias/hash-table-in-c',
+        image: 'src/hash-table.webp',
+        tags: [TAGS.C]
+    },
+    {
+        title: 'MonkeyType Clone',
+        description: 'Monkeytype permite practicar mecanografía. Ofrece ejercicios de tipeo en diferentes modos y permite medir la velocidad, precisión y consistencia.',
+        link: 'https://ignaciodias.github.io/monkeytype-clone/',
+        github: 'https://github.com/ignacioDias/monkeytype-clone/',
+        image: 'src/monkeytype-clone.webp',
+        tags: [TAGS.HTML, TAGS.JS]
     }
 ]
 
