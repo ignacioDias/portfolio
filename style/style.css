@@ -45,6 +45,7 @@ body {
   width: 1120px;                   
   margin: 0 auto;                   
 }
+
 .my-picture {
     width: 60px;
     height: 60px;
@@ -179,7 +180,9 @@ body {
 #projects {
   margin-top: 1px;
 }
-
+#sobre-mi {
+  margin-top: 10px;
+}
 .timeline {
   position: relative;
   border-left: 2px solid rgba(255, 255, 255, 0.1);
@@ -683,3 +686,37 @@ footer ul a:hover {
   transform: scale(1.07);
 }
 
+.about-me-img {
+  float:right;
+  order: 1;
+  width: 16rem;           /* w-64 */
+  height: 100%;
+  padding: 0.25rem;       /* p-1 */
+  border-radius: 1rem;    /* rounded-2xl */
+  background-color: rgba(0,0,0,0.2); /* bg-black/20 */
+  box-shadow: none;
+  aspect-ratio: 1 / 1;    /* aspect-square */
+  transform: rotate(3deg);
+  margin-left: 50px;
+  margin-bottom: 70px;
+}
+
+@media (min-width: 768px) {
+  .about-me-img {
+    order: 2;             /* md:order-2 */
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-me-img {
+    padding: 0.5rem;      /* lg:p-2 */
+    width: 16rem;         /* lg:w-64 */
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .about-me-img {
+    background-color: rgba(253, 224, 71, 0.05); /* dark:bg-yellow-500/5 */
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.2); /* dark:ring-white/20 */
+  }
+}
