@@ -689,15 +689,18 @@ footer ul a:hover {
 }
 
 .about-me-img {
-  float:right;
+  float: right;
   order: 1;
   width: 16rem;           /* w-64 */
-  height: 100%;
+  height: auto;          /* let height follow width to preserve aspect ratio */
+  max-width: 100%;       /* avoid overflow when container is smaller */
   padding: 0.25rem;       /* p-1 */
   border-radius: 1rem;    /* rounded-2xl */
   background-color: rgba(0,0,0,0.2); /* bg-black/20 */
   box-shadow: none;
   aspect-ratio: 1 / 1;    /* aspect-square */
+  object-fit: cover;      /* crop nicely if needed without stretching */
+  display: block;         /* ensure sizing rules apply as expected */
   transform: rotate(3deg);
   margin-left: 50px;
   margin-bottom: 70px;
@@ -770,6 +773,10 @@ footer ul a:hover {
     float: none;
     display: block;
     margin: 0 auto;
+    height: auto;           /* keep automatic height on small screens */
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
   }
 
   #sobre-mi > div {
@@ -839,16 +846,21 @@ footer ul a:hover {
     margin: 0 auto 16px auto !important;
     float: none;
     width: 140px;
-    height: 140px;
+    height: auto;           /* don't force fixed height to avoid stretching */
     padding: 0.15rem;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    max-width: 100%;
   }
 }
 
 @media (max-width: 480px) {
   .about-me-img {
     width: 100px;
-    height: 100px;
+    height: auto;
     padding: 0.1rem;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
   }
   #sobre-mi h2 {
     font-size: 1.2rem;
