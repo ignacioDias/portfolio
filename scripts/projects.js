@@ -49,11 +49,19 @@ const PROJECTS = [
         image: 'src/monkeytype-clone.webp',
         tags: [TAGS.HTML, TAGS.JS]
     },
-      {
+    {
         title: 'Portfolio',
         description: 'Sitio web personal donde muestro mis conocimientos y cuento un poco sobre mí.',
         github: 'https://github.com/ignacioDias/portfolio',
-        image: 'src/monkeytype-clone.webp',
+        image: 'src/portfolio.webp',
+        tags: [TAGS.HTML, TAGS.JS]
+    },
+    {
+        title: 'Sistena de biblioteca',
+        description: 'Pequeño sistema para almacenar libros.',
+        link: 'https://ignaciodias.github.io/library-js/',
+        github: 'https://github.com/ignacioDias/library-js',
+        image: 'src/library.webp',
         tags: [TAGS.HTML, TAGS.JS]
     },
       {
@@ -61,7 +69,7 @@ const PROJECTS = [
         description: 'Spy es un juego hecho con Javascript, donde varios jguadores tienen que adivinar quién es el espía. La idea es elegir una categoría e irse pasando el celular hasta asegurar los roles.',
         link: 'https://ignaciodias.github.io/spy/',
         github: 'https://github.com/ignacioDias/spy',
-        image: 'src/monkeytype-clone.webp',
+        image: 'src/spy.webp',
         tags: [TAGS.HTML, TAGS.JS]
     },
     {
@@ -69,7 +77,7 @@ const PROJECTS = [
         description: 'etch-a-sketch es una pizarra simple que permite pintar, implementada con Javascript, HTML y CSS.',
         link: 'https://ignaciodias.github.io/etch-a-sketch/',
         github: 'https://github.com/ignacioDias/etch-a-sketch',
-        image: 'src/monkeytype-clone.webp',
+        image: 'src/sketch.webp',
         tags: [TAGS.HTML, TAGS.JS]
     },
     {
@@ -77,7 +85,7 @@ const PROJECTS = [
         description: 'Simple calculadora implementada con Javascript, html y css.',
         link: 'https://ignaciodias.github.io/calculator/',
         github: 'https://github.com/ignacioDias/calculator',
-        image: 'src/monkeytype-clone.webp',
+        image: 'src/calculator.webp',
         tags: [TAGS.HTML, TAGS.JS]
     },
     {
@@ -85,14 +93,14 @@ const PROJECTS = [
         description: 'Simple juego implementado con Javascript, html y css.',
         link: 'https://ignaciodias.github.io/rock-paper-scissors/',
         github: 'https://github.com/ignacioDias/rock-paper-scissors',
-        image: 'src/monkeytype-clone.webp',
+        image: 'src/rock.webp',
         tags: [TAGS.HTML, TAGS.JS]
     },
     {
         title: 'Pokémon Java',
         description: 'Pokémon de terminal simple que busca mostrar buenas prácticas de la POO.',
         github: 'https://github.com/ignacioDias/pokemon-java',
-        image: 'src/monkeytype-clone.webp',
+        image: 'src/pokemon.webp',
         tags: [TAGS.JAVA]
     },
     {
