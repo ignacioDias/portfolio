@@ -353,6 +353,9 @@ body {
 .bg-orange {
   background: #e44b20;
 }
+.bg-green {
+  background: #6DB33F;
+}
 .bg-blue {
   background: #00589d;
 }
@@ -875,4 +878,75 @@ footer ul a:hover {
     justify-content: center;
     gap: 16px;
   }
+}
+
+.technologies {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.technologies button {
+  background: #1e1e1e;
+  border: 2px solid #333;
+  border-radius: 12px;
+  padding: 8px 10px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.technologies button:hover {
+  background: #2d2d2d;
+  transform: translateY(-3px) scale(1.05);
+  border-color: #4caf50;
+  box-shadow: 0 4px 10px rgba(76, 175, 80, 0.3);
+}
+
+.technologies img {
+  height: 40px;
+  width: 40px;
+}
+
+/* Hover y activo por tecnología */
+.technologies button[data-tech="JavaScript"]:hover,
+.technologies button[data-tech="JavaScript"].active {
+  border-color: #f7df1e;
+  box-shadow: 0 0 10px #f7df1e80;
+}
+
+.technologies button[data-tech="C_LANGUAGE"]:hover,
+.technologies button[data-tech="C_LANGUAGE"].active {
+  border-color: #007bff;
+  box-shadow: 0 0 10px #007bff80;
+}
+
+.technologies button[data-tech="Java"]:hover,
+.technologies button[data-tech="Java"].active {
+  border-color: #f89820;
+  box-shadow: 0 0 10px #f8982080;
+}
+
+.technologies button[data-tech="Spring"]:hover,
+.technologies button[data-tech="Spring"].active {
+  border-color: #6db33f;
+  box-shadow: 0 0 10px #6db33f80;
+}
+
+.technologies button[data-tech="Python"]:hover,
+.technologies button[data-tech="Python"].active {
+  border-color: #ffd43b;
+  box-shadow: 0 0 10px #ffd43b80;
+}
+
+.technologies button[data-tech="HTML"]:hover,
+.technologies button[data-tech="HTML"].active {
+  border-color: #e34c26;
+  box-shadow: 0 0 10px #e34c2680;
+}
+
+.technologies button[data-tech="MySQL"]:hover,
+.technologies button[data-tech="MySQL"].active {
+  border-color: #00758f;
+  box-shadow: 0 0 10px #00758f80;
 }
