@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
 let currentTechnology = null;
 
 document.addEventListener('DOMContentLoaded', () => {

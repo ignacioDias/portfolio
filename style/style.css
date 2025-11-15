@@ -356,6 +356,9 @@ body {
 .bg-green {
   background: #6DB33F;
 }
+.bg-darkgreen {
+  background: #215732;
+}
 .bg-blue {
   background: #00589d;
 }
@@ -913,6 +916,12 @@ footer ul a:hover {
 .technologies button[data-tech="JavaScript"].active {
   border-color: #f7df1e;
   box-shadow: 0 0 10px #f7df1e80;
+}
+
+.technologies button[data-tech="NodeJS"]:hover,
+.technologies button[data-tech="NodeJS"].active {
+  border-color: #215732;
+  box-shadow: 0 0 10px #194226;
 }
 
 .technologies button[data-tech="C_LANGUAGE"]:hover,

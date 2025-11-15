@@ -23,6 +23,15 @@ const TAGS = {
       name: 'Spring',
       icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-brand-c"><circle cx="12" cy="12" r="10"/><path d="M16 10a4 4 0 1 0 0 4"/></svg>',
       class: "bg-green text-white"
+    },
+    NODE: {
+      name: 'NodeJS',
+      icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon" fill="none" aria-hidden="true">'
+        + '<path d="M12 2l7 4v8l-7 4-7-4V6l7-4z" fill="#3C873A"/>'
+        + '<path d="M12 6.5l4 2.2v4.6l-4 2.2-4-2.2v-4.6l4-2.2z" fill="#68A063"/>'
+        + '<path d="M12 9.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z" fill="#ffffff" opacity="0.06"/>'
+      + '</svg>',
+      class: "bg-darkgreen text-white"
     }
 }
 
@@ -48,6 +57,20 @@ const PROJECTS = [
         github: 'https://github.com/ignacioDias/monkeytype-clone/',
         image: 'src/monkeytype-clone.webp',
         tags: [TAGS.HTML, TAGS.JS]
+    },
+      {
+        title: 'Tesis',
+        description: 'Mi Tesis de Grado. Usando NodeJS, la idea es genera un software que permita a los niños introducirse en el mundo de la programación usando Blockly de Google como herramienta.',
+        github: 'https://github.com/ignacioDias/drawing-with-blockly',
+        image: 'src/monkeytype-clone.webp',
+        tags: [TAGS.HTML, TAGS.JS, TAGS.NODE]
+    },
+    {
+        title: 'Sitio Web Para un Restaurante',
+        description: 'Sitio web simple hecho usando NodeJS y Webpack.',
+        github: 'https://github.com/ignacioDias/webpack-restaurant-project',
+        image: 'src/restaurant.webp',
+        tags: [TAGS.HTML, TAGS.JS, TAGS.NODE]
     },
     {
         title: 'Portfolio',
