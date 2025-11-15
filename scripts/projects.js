@@ -89,7 +89,7 @@ const PROJECTS = [
     },
       {
         title: 'Spy',
-        description: 'Spy es un juego hecho con Javascript, donde varios jguadores tienen que adivinar quién es el espía. La idea es elegir una categoría e irse pasando el celular hasta asegurar los roles.',
+        description: 'Spy es un juego hecho con Javascript, donde varios jugadores tienen que adivinar quién es el espía. La idea es elegir una categoría e irse pasando el celular hasta asegurar los roles.',
         link: 'https://ignaciodias.github.io/spy/',
         github: 'https://github.com/ignacioDias/spy',
         image: 'src/spy.webp',
