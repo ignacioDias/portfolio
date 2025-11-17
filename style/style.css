@@ -948,12 +948,6 @@ footer ul a:hover {
   box-shadow: 0 0 10px #ffd43b80;
 }
 
-.technologies button[data-tech="HTML"]:hover,
-.technologies button[data-tech="HTML"].active {
-  border-color: #e34c26;
-  box-shadow: 0 0 10px #e34c2680;
-}
-
 .technologies button[data-tech="MySQL"]:hover,
 .technologies button[data-tech="MySQL"].active {
   border-color: #00758f;
