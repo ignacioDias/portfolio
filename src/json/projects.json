@@ -1,0 +1,128 @@
+[
+  {
+    "title": "Compilador",
+    "description": "Desarrollamos un compilador para un lenguaje propio. Usando Bison y Flex.",
+    "github": "https://github.com/ignacioDias/final-project-compilador",
+    "image": "src/compilator.webp",
+    "tags": [
+      "C_LANGUAGE"
+    ]
+  },
+  {
+    "title": "Implementación de Hash Table",
+    "description": "Desarrollé una implementación de dicha estructura de datos con el algoritmo FNV-1a",
+    "github": "https://github.com/ignacioDias/hash-table-in-c",
+    "image": "src/hash-table.webp",
+    "tags": [
+      "C_LANGUAGE"
+    ]
+  },
+  {
+    "title": "MonkeyType Clone",
+    "description": "Monkeytype permite practicar mecanografía. Ofrece ejercicios de tipeo en diferentes modos y permite medir la velocidad, precisión y consistencia.",
+    "link": "https://ignaciodias.github.io/monkeytype-clone/",
+    "github": "https://github.com/ignacioDias/monkeytype-clone/",
+    "image": "src/monkeytype-clone.webp",
+    "tags": [
+      "JS"
+    ]
+  },
+  {
+    "title": "Tesis",
+    "description": "Mi Tesis de Grado. Usando NodeJS, la idea es genera un software que permita a los niños introducirse en el mundo de la programación usando Blockly de Google como herramienta.",
+    "github": "https://github.com/ignacioDias/drawing-with-blockly",
+    "image": "src/tesis.webp",
+    "tags": [
+      "JS",
+      "NODE"
+    ]
+  },
+  {
+    "title": "Sitio Web Para un Restaurante",
+    "description": "Sitio web simple hecho usando NodeJS y Webpack.",
+    "github": "https://github.com/ignacioDias/webpack-restaurant-project",
+    "image": "src/restaurant.webp",
+    "tags": [
+      "JS",
+      "NODE"
+    ]
+  },
+  {
+    "title": "Portfolio",
+    "description": "Sitio web personal donde muestro mis conocimientos y cuento un poco sobre mí.",
+    "github": "https://github.com/ignacioDias/portfolio",
+    "image": "src/portfolio.webp",
+    "tags": [
+      "JS"
+    ]
+  },
+  {
+    "title": "Sistena de biblioteca",
+    "description": "Pequeño sistema para almacenar libros.",
+    "link": "https://ignaciodias.github.io/library-js/",
+    "github": "https://github.com/ignacioDias/library-js",
+    "image": "src/library.webp",
+    "tags": [
+      "JS"
+    ]
+  },
+  {
+    "title": "Spy",
+    "description": "Spy es un juego hecho con Javascript, donde varios jugadores tienen que adivinar quién es el espía. La idea es elegir una categoría e irse pasando el celular hasta asegurar los roles.",
+    "link": "https://ignaciodias.github.io/spy/",
+    "github": "https://github.com/ignacioDias/spy",
+    "image": "src/spy.webp",
+    "tags": [
+      "JS"
+    ]
+  },
+  {
+    "title": "etch-a-sketch",
+    "description": "etch-a-sketch es una pizarra simple que permite pintar, implementada con Javascript, HTML y CSS.",
+    "link": "https://ignaciodias.github.io/etch-a-sketch/",
+    "github": "https://github.com/ignacioDias/etch-a-sketch",
+    "image": "src/sketch.webp",
+    "tags": [
+      "JS"
+    ]
+  },
+  {
+    "title": "Calculadora",
+    "description": "Simple calculadora implementada con Javascript, html y css.",
+    "link": "https://ignaciodias.github.io/calculator/",
+    "github": "https://github.com/ignacioDias/calculator",
+    "image": "src/calculator.webp",
+    "tags": [
+      "JS"
+    ]
+  },
+  {
+    "title": "Piedra, papel o tijeras",
+    "description": "Simple juego implementado con Javascript, html y css.",
+    "link": "https://ignaciodias.github.io/rock-paper-scissors/",
+    "github": "https://github.com/ignacioDias/rock-paper-scissors",
+    "image": "src/rock.webp",
+    "tags": [
+      "JS"
+    ]
+  },
+  {
+    "title": "Pokémon Java",
+    "description": "Pokémon de terminal simple que busca mostrar buenas prácticas de la POO.",
+    "github": "https://github.com/ignacioDias/pokemon-java",
+    "image": "src/pokemon.webp",
+    "tags": [
+      "JAVA"
+    ]
+  },
+  {
+    "title": "TODO-APP",
+    "description": "Simple TODO-APP hecha con Spring boot.",
+    "github": "https://github.com/ignacioDias/todoapp-springboot",
+    "image": "src/monkeytype-clone.webp",
+    "tags": [
+      "JAVA",
+      "SPRING"
+    ]
+  }
+]

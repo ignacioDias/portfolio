@@ -1,247 +1,65 @@
-const TAGS = {
-    JS: {
-        name: 'JavaScript',
-        icon: '<svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-javascript"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" /><path d="M7.5 8h3v8l-2 -1" /><path d="M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5" /></svg>',
-        class: "bg-yellow text-darkgray"
-    },
-    C_LANGUAGE: {
-        name: 'C',
-        icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-brand-c"><circle cx="12" cy="12" r="10"/><path d="M16 10a4 4 0 1 0 0 4"/></svg>',
-        class: "bg-blue text-white"
-    },
-    JAVA: {
-      name: 'Java',
-      icon: `
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-            viewBox="0 0 128 128" fill="currentColor" class="icon">
-          <path d="M47.617 98.12s-4.767 2.774 3.397 3.71c9.892 1.13 14.947.968 25.845-1.092 0 0 2.871 1.795 6.873 3.351-24.439 10.47-55.308-.607-36.115-5.969zm-2.988-13.665s-5.348 3.959 2.823 4.805c10.567 1.091 18.91 1.18 33.354-1.6 0 0 1.993 2.025 5.132 3.131-29.542 8.64-62.446.68-41.309-6.336z"/>
-          <path d="M69.802 61.271c6.025 6.935-1.58 13.17-1.58 13.17s15.289-7.891 8.269-17.777c-6.559-9.215-11.587-13.792 15.635-29.58 0 .001-42.731 10.67-22.324 34.187z"/>
-          <path d="M102.123 108.229s3.529 2.91-3.888 5.159c-14.102 4.272-58.706 5.56-71.094.171-4.451-1.938 3.899-4.625 6.526-5.192 2.739-.593 4.303-.485 4.303-.485-4.953-3.487-32.013 6.85-13.743 9.815 49.821 8.076 90.817-3.637 77.896-9.468zM49.912 70.294s-22.686 5.389-8.033 7.348c6.188.828 18.518.638 30.011-.326 9.39-.789 18.813-2.474 18.813-2.474s-3.308 1.419-5.704 3.053c-23.042 6.061-67.544 3.238-54.731-2.958 10.832-5.239 19.644-4.643 19.644-4.643zm40.697 22.747c23.421-12.167 12.591-23.86 5.032-22.285-1.848.385-2.677.72-2.677.72s.688-1.079 2-1.543c14.953-5.255 26.451 15.503-4.823 23.725 0-.002.359-.327.468-.617z"/>
-          <path d="M76.491 1.587S89.459 14.563 64.188 34.51c-20.266 16.006-4.621 25.13-.007 35.559-11.831-10.673-20.509-20.07-14.688-28.815C58.041 28.42 81.722 22.195 76.491 1.587z"/>
-          <path d="M52.214 126.021c22.476 1.437 57-.8 57.817-11.436 0 0-1.571 4.032-18.577 7.231-19.186 3.612-42.854 3.191-56.887.874 0 .001 2.875 2.381 17.647 3.331z"/>
-        </svg>
-      `,
-      class: "bg-orange text-white"
-    },
-    SPRING: {
-      name: 'Spring',
-      icon: `
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-            viewBox="0 0 128 128" fill="currentColor" class="icon">
-          <path d="M116.452 6.643a59.104 59.104 0 01-6.837 12.136A64.249 64.249 0 0064.205-.026C28.984-.026 0 28.982 0 64.242a64.316 64.316 0 0019.945 46.562l2.368 2.1a64.22 64.22 0 0041.358 15.122c33.487 0 61.637-26.24 64.021-59.683 1.751-16.371-3.051-37.077-11.24-61.7zM29.067 111.17a5.5 5.5 0 01-4.269 2.034c-3.018 0-5.487-2.484-5.487-5.502 0-3.017 2.485-5.501 5.487-5.501 1.25 0 2.485.433 3.452 1.234 2.351 1.9 2.718 5.384.817 7.735zm87.119-19.238c-15.843 21.122-49.68 14.003-71.376 15.02 0 0-3.852.234-7.721.867 0 0 1.45-.617 3.335-1.334 15.226-5.301 22.43-6.335 31.685-11.086 17.427-8.869 34.654-28.274 38.24-48.463-6.637 19.422-26.75 36.11-45.077 42.895-12.557 4.635-35.238 9.136-35.238 9.136l-.917-.484c-15.442-7.518-15.91-40.977 12.157-51.78 12.291-4.735 24.048-2.134 37.323-5.302 14.175-3.367 30.568-14.004 37.238-27.874 7.471 22.19 16.46 56.932.35 78.405z"/>
-        </svg>
-      `,
-      class: "bg-green text-white"
-    },
-    PYTHON: {
-      name: 'Python',
-        icon: `
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 128 128" fill="currentColor" class="icon">
+import { TAGS } from "./tags.js"; 
 
-            <path d="M63.391 1.988c-4.222.02-8.252.379-11.8 1.007-10.45 1.846-12.346 5.71-12.346 12.837v9.411h24.693v3.137H29.977c-7.176 0-13.46 4.313-15.426 12.521-2.268 9.405-2.368 15.275 0 25.096 1.755 7.311 5.947 12.519 13.124 12.519h8.491V67.234c0-8.151 7.051-15.34 15.426-15.34h24.665c6.866 0 12.346-5.654 12.346-12.548V15.833c0-6.693-5.646-11.72-12.346-12.837-4.244-.706-8.645-1.027-12.866-1.008zM50.037 9.557c2.55 0 4.634 2.117 4.634 4.721 0 2.593-2.083 4.69-4.634 4.69-2.56 0-4.633-2.097-4.633-4.69-.001-2.604 2.073-4.721 4.633-4.721z"
-              transform="translate(0 10.26)" />
-
-            <path d="M91.682 28.38v10.966c0 8.5-7.208 15.655-15.426 15.655H51.591c-6.756 0-12.346 5.783-12.346 12.549v23.515c0 6.691 5.818 10.628 12.346 12.547 7.816 2.297 15.312 2.713 24.665 0 6.216-1.801 12.346-5.423 12.346-12.547v-9.412H63.938v-3.138h37.012c7.176 0 9.852-5.005 12.348-12.519 2.578-7.735 2.467-15.174 0-25.096-1.774-7.145-5.161-12.521-12.348-12.521h-9.268zM77.809 87.927c2.561 0 4.634 2.097 4.634 4.692 0 2.602-2.074 4.719-4.634 4.719-2.55 0-4.633-2.117-4.633-4.719 0-2.595 2.083-4.692 4.633-4.692z"
-              transform="translate(0 10.26)" />
-
-            <path opacity=".44" d="M97.309 119.597c0 3.543-14.816 6.416-33.091 6.416-18.276 0-33.092-2.873-33.092-6.416 0-3.544 14.815-6.417 33.092-6.417 18.275 0 33.091 2.872 33.091 6.417z"/>
-          </svg>
-        `,
-        class: "bg-blue text-white"
-    },
-    SQL: {
-        name: 'SQL',
-        icon: `
-          <svg xmlns="http://www.w3.org/2000/svg"
-              width="24" height="24" viewBox="0 0 128 128"
-              fill="currentColor" class="icon">
-
-            <!-- Base del cilindro -->
-            <path d="M51.395 24.879c-27.422 0-49.649-3.832-49.649-8.535v92.261c0 4.727 22.227 8.536 49.649 8.536 27.421 0 49.648-3.832 49.648-8.536V16.29c0 4.758-22.227 8.59-49.648 8.59z"/>
-            <path d="M1.746 16.29v92.315c0 4.727 22.227 8.536 49.649 8.536V24.879c-27.422 0-49.649-3.832-49.649-8.59z"/>
-            <path d="M101.043 16.313c0-4.723-22.23-8.555-49.648-8.555-27.422 0-49.649 3.832-49.649 8.555 0 4.726 22.227 8.558 49.649 8.558 27.417 0 49.648-3.832 49.648-8.558z"/>
-
-            <!-- Capas internas -->
-            <path d="M1.746 74.332c0 4.727 22.227 8.535 49.649 8.535 27.421 0 49.648-3.832 49.648-8.535v6.984c0 4.723-22.227 8.532-49.648 8.532-27.422 0-49.649-3.832-49.649-8.532z"/>
-            <path d="M1.746 43.582c0 4.723 22.227 8.535 49.649 8.535 27.421 0 49.648-3.836 49.648-8.535v6.98c0 4.727-22.227 8.536-49.648 8.536-27.422 0-49.649-3.832-49.649-8.535z"/>
-
-            <!-- Círculo SQL -->
-            <circle cx="97.164" cy="93.09" r="29.48"/>
-
-            <!-- Triángulo (play) -->
-            <path d="m88.063 105.906 24.027-13.87-24.028-13.872z"/>
-          </svg>
-        `,
-        class: "bg-blue text-white"
-    },
-    NODE: {
-      name: 'NodeJS',
-      icon: `
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-            viewBox="0 0 128 128" fill="currentColor" class="icon">
-          <path d="M112.771 30.334L68.674 4.729c-2.781-1.584-6.402-1.584-9.205 0L14.901 30.334C12.031 31.985 10 35.088 10 38.407v51.142c0 3.319 2.084 6.423 4.954 8.083l11.775 6.688c5.628 2.772 7.617 2.772 10.178 2.772 8.333 0 13.093-5.039 13.093-13.828v-50.49c0-.713-.371-1.774-1.071-1.774h-5.623C42.594 41 41 42.061 41 42.773v50.49c0 3.896-3.524 7.773-10.11 4.48L18.723 90.73c-.424-.23-.723-.693-.723-1.181V38.407c0-.482.555-.966.982-1.213l44.424-25.561c.415-.235 1.025-.235 1.439 0l43.882 25.555c.42.253.272.722.272 1.219v51.142c0 .488.183.963-.232 1.198l-44.086 25.576c-.378.227-.847.227-1.261 0l-11.307-6.749c-.341-.198-.746-.269-1.073-.086-3.146 1.783-3.726 2.02-6.677 3.043-.726.253-1.797.692.41 1.929l14.798 8.754a9.294 9.294 0 004.647 1.246c1.642 0 3.25-.426 4.667-1.246l43.885-25.582c2.87-1.672 4.23-4.764 4.23-8.083V38.407c0-3.319-1.36-6.414-4.229-8.073z"/>
-          <path d="M77.91 81.445c-11.726 0-14.309-3.235-15.17-9.066-.1-.628-.633-1.379-1.272-1.379h-5.731c-.709 0-1.279.86-1.279 1.566 0 7.466 4.059 16.512 23.453 16.512 14.039 0 22.088-5.455 22.088-15.109 0-9.572-6.467-12.084-20.082-13.886-13.762-1.819-15.16-2.738-15.16-5.962 0-2.658 1.184-6.203 11.374-6.203 9.105 0 12.461 1.954 13.842 8.091.118.577.645.991 1.24.991h5.754c.354 0 .692-.143.94-.396.24-.272.367-.613.335-.979-.891-10.568-7.912-15.493-22.112-15.493-12.631 0-20.166 5.334-20.166 14.275 0 9.698 7.497 12.378 19.622 13.577 14.505 1.422 15.633 3.542 15.633 6.395 0 4.955-3.978 7.066-13.309 7.066z"/>
-        </svg>
-      `,
-      class: "bg-darkgreen text-white"
-    }
-
+async function init() {
+  const res = await fetch("./src/json/projects.json");
+  const PROJECTS = await res.json();
+  renderProjects(PROJECTS);
 }
 
-const PROJECTS = [
-    {
-        title: 'Compilador',
-        description: 'Desarrollamos un compilador para un lenguaje propio. Usando Bison y Flex.',
-        github: 'https://github.com/ignacioDias/final-project-compilador',
-        image: 'src/compilator.webp',
-        tags: [TAGS.C_LANGUAGE]
-    },
-    {
-        title: 'Implementación de Hash Table',
-        description: 'Desarrollé una implementación de dicha estructura de datos con el algoritmo FNV-1a',
-        github: 'https://github.com/ignacioDias/hash-table-in-c',
-        image: 'src/hash-table.webp',
-        tags: [TAGS.C_LANGUAGE]
-    },
-    {
-        title: 'MonkeyType Clone',
-        description: 'Monkeytype permite practicar mecanografía. Ofrece ejercicios de tipeo en diferentes modos y permite medir la velocidad, precisión y consistencia.',
-        link: 'https://ignaciodias.github.io/monkeytype-clone/',
-        github: 'https://github.com/ignacioDias/monkeytype-clone/',
-        image: 'src/monkeytype-clone.webp',
-        tags: [TAGS.JS]
-    },
-      {
-        title: 'Tesis',
-        description: 'Mi Tesis de Grado. Usando NodeJS, la idea es genera un software que permita a los niños introducirse en el mundo de la programación usando Blockly de Google como herramienta.',
-        github: 'https://github.com/ignacioDias/drawing-with-blockly',
-        image: 'src/tesis.webp',
-        tags: [TAGS.JS, TAGS.NODE]
-    },
-    {
-        title: 'Sitio Web Para un Restaurante',
-        description: 'Sitio web simple hecho usando NodeJS y Webpack.',
-        github: 'https://github.com/ignacioDias/webpack-restaurant-project',
-        image: 'src/restaurant.webp',
-        tags: [TAGS.JS, TAGS.NODE]
-    },
-    {
-        title: 'Portfolio',
-        description: 'Sitio web personal donde muestro mis conocimientos y cuento un poco sobre mí.',
-        github: 'https://github.com/ignacioDias/portfolio',
-        image: 'src/portfolio.webp',
-        tags: [TAGS.JS]
-    },
-    {
-        title: 'Sistena de biblioteca',
-        description: 'Pequeño sistema para almacenar libros.',
-        link: 'https://ignaciodias.github.io/library-js/',
-        github: 'https://github.com/ignacioDias/library-js',
-        image: 'src/library.webp',
-        tags: [TAGS.JS]
-    },
-      {
-        title: 'Spy',
-        description: 'Spy es un juego hecho con Javascript, donde varios jugadores tienen que adivinar quién es el espía. La idea es elegir una categoría e irse pasando el celular hasta asegurar los roles.',
-        link: 'https://ignaciodias.github.io/spy/',
-        github: 'https://github.com/ignacioDias/spy',
-        image: 'src/spy.webp',
-        tags: [TAGS.JS]
-    },
-    {
-        title: 'etch-a-sketch',
-        description: 'etch-a-sketch es una pizarra simple que permite pintar, implementada con Javascript, HTML y CSS.',
-        link: 'https://ignaciodias.github.io/etch-a-sketch/',
-        github: 'https://github.com/ignacioDias/etch-a-sketch',
-        image: 'src/sketch.webp',
-        tags: [TAGS.JS]
-    },
-    {
-        title: 'Calculadora',
-        description: 'Simple calculadora implementada con Javascript, html y css.',
-        link: 'https://ignaciodias.github.io/calculator/',
-        github: 'https://github.com/ignacioDias/calculator',
-        image: 'src/calculator.webp',
-        tags: [TAGS.JS]
-    },
-    {
-        title: 'Piedra, papel o tijeras',
-        description: 'Simple juego implementado con Javascript, html y css.',
-        link: 'https://ignaciodias.github.io/rock-paper-scissors/',
-        github: 'https://github.com/ignacioDias/rock-paper-scissors',
-        image: 'src/rock.webp',
-        tags: [TAGS.JS]
-    },
-    {
-        title: 'Pokémon Java',
-        description: 'Pokémon de terminal simple que busca mostrar buenas prácticas de la POO.',
-        github: 'https://github.com/ignacioDias/pokemon-java',
-        image: 'src/pokemon.webp',
-        tags: [TAGS.JAVA]
-    },
-    {
-        title: 'TODO-APP',
-        description: 'Simple TODO-APP hecha con Spring boot.',
-        github: 'https://github.com/ignacioDias/todoapp-springboot',
-        image: 'src/monkeytype-clone.webp',
-        tags: [TAGS.JAVA, TAGS.SPRING]
-    }, 
-
-]
-
-// ====== FUNCIÓN PARA RENDERIZAR PROYECTOS ======
-function renderProjects(filterTech = null) {
+function renderProjects(PROJECTS) {
   const projectContainer = document.getElementById("projects-list");
   projectContainer.innerHTML = "";
 
-  const filtered = filterTech
-    ? PROJECTS.filter(p =>
-        p.tags.some(tag => tag.name.toLowerCase() === filterTech.toLowerCase())
-      )
-    : PROJECTS;
+  PROJECTS.forEach(project => {
+    const tagObjects = project.tags.map(tagId => TAGS[tagId]);  // <--- CLAVE
 
-  filtered.forEach(({ image, title, description, tags, link, github }) => {
     const article = document.createElement("article");
     article.className = "project-card";
 
     article.innerHTML = `
       <div class="project-img-col">
         <div class="project-image-wrapper">
-          <img src="${image}" alt="${title}" class="project-image" loading="lazy"/>
+          <img src="${project.image}" alt="${project.title}" class="project-image" loading="lazy"/>
         </div>
       </div>
 
       <div class="project-info-col">
-        <h3>${title}</h3>
+        <h3>${project.title}</h3>
 
         <ul class="project-tags">
-          ${tags
-            .map(tag => `<li><span class="tag-badge ${tag.class}" data-tech="${tag.name}">${tag.icon || ''}${tag.name}</span></li>`)
+          ${tagObjects
+            .map(t => 
+              `<li>
+                <span class="tag-badge ${t.class}" data-tech="${t.name}">
+                  ${t.icon}${t.name}
+                </span>
+              </li>`
+            )
             .join("")}
         </ul>
 
-        <p class="project-description">${description}</p>
+        <p class="project-description">${project.description}</p>
 
         <footer class="project-footer">
-        ${github ? `
-          <a href="${github}" class="project-link-btn" target="_blank" rel="noopener">
+          ${project.github ? `
+          <a href="${project.github}" class="project-link-btn" target="_blank" rel="noopener">
             <svg class="icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C5.27.65 4.09 1 4.09 1A5.07 5.07 0 0 0 4 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 21.13V25"></path></svg>
             Code
           </a>
         ` : ''}
-        ${link ? `
-          <a href="${link}" class="project-link-btn" target="_blank" rel="noopener">
+        ${project.link ? `
+          <a href="${project.link}" class="project-link-btn" target="_blank" rel="noopener">
             <svg class="icon" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M10 14L21 3m0 0v7m0-7h-7"/><path d="M21 21H3V3h7"/></svg>
             Preview
           </a>
         ` : ''}
+          
         </footer>
       </div>
     `;
-       projectContainer.appendChild(article);
+    
+    projectContainer.appendChild(article);
   });
 }
 
-// Render immediately so projects exist before other scripts attach listeners
-renderProjects();
+init();
