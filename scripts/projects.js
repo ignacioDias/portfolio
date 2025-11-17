@@ -116,7 +116,7 @@ const PROJECTS = [
         title: 'Tesis',
         description: 'Mi Tesis de Grado. Usando NodeJS, la idea es genera un software que permita a los niños introducirse en el mundo de la programación usando Blockly de Google como herramienta.',
         github: 'https://github.com/ignacioDias/drawing-with-blockly',
-        image: 'src/monkeytype-clone.webp',
+        image: 'src/tesis.webp',
         tags: [TAGS.JS, TAGS.NODE]
     },
     {
