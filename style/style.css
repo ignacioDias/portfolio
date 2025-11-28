@@ -924,6 +924,12 @@ footer ul a:hover {
   box-shadow: 0 0 10px #194226;
 }
 
+.technologies button[data-tech="HTML"]:hover,
+.technologies button[data-tech="HTML"].active {
+  border-color: #e34c26;
+  box-shadow: 0 0 10px #e34c2680;
+}
+
 .technologies button[data-tech="C_LANGUAGE"]:hover,
 .technologies button[data-tech="C_LANGUAGE"].active {
   border-color: #007bff;
@@ -952,4 +958,8 @@ footer ul a:hover {
 .technologies button[data-tech="MySQL"].active {
   border-color: #00758f;
   box-shadow: 0 0 10px #00758f80;
+}
+.about-me-img:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(255,255,255,0.2);
 }
