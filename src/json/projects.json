@@ -102,9 +102,21 @@
   },
   {
     "title": "FAMILY-CASHCARDS",
-    "description": "APP hecha con Spring boot para manejar gastos familiares.",
+    "description": "APP hecha con Spring boot para manejar gastos familiares. Usando Basic Auth.",
     "github": "https://github.com/ignacioDias/family-cashcard",
     "image": "src/family.webp",
+    "tags": [
+      "JAVA",
+      "SPRING",
+      "JS",
+      "HTML"
+    ]
+  },
+  {
+    "title": "BLOG",
+    "description": "APP hecha con Spring boot para operaciones CRUD sobre artículos. Usando Basic Auth.",
+    "github": "https://github.com/ignacioDias/blog",
+    "image": "src/blog.webp",
     "tags": [
       "JAVA",
       "SPRING",
