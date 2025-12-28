@@ -91,7 +91,7 @@
     ]
   },
   {
-    "title": "TODO-APP",
+    "title": "TODO-App",
     "description": "Simple TODO-APP hecha con Spring boot.",
     "github": "https://github.com/ignacioDias/todoapp-springboot",
     "image": "src/monkeytype-clone.webp",
@@ -101,7 +101,7 @@
     ]
   },
   {
-    "title": "FAMILY-CASHCARDS",
+    "title": "Family-Cashcards",
     "description": "APP hecha con Spring boot para manejar gastos familiares. Usando Basic Auth.",
     "github": "https://github.com/ignacioDias/family-cashcard",
     "image": "src/family.webp",
@@ -113,7 +113,7 @@
     ]
   },
   {
-    "title": "BLOG",
+    "title": "Blog App",
     "description": "APP hecha con Spring boot para operaciones CRUD sobre artículos. Usando Basic Auth.",
     "github": "https://github.com/ignacioDias/blog",
     "image": "src/blog.webp",
@@ -122,6 +122,15 @@
       "SPRING",
       "JS",
       "HTML"
+    ]
+  },
+  {
+    "title": "Weather App",
+    "description": "App de línea de comandos que recibe una ciudad, obtiene sus coordenadas usando la API de Geocoding y muestra en la terminal el clima actual.",
+    "github": "https://github.com/ignacioDias/weather-app",
+    "image": "src/weather.webp",
+    "tags": [
+      "JAVA"
     ]
   }
 ]
