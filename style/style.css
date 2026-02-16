@@ -362,6 +362,9 @@ body {
 .bg-blue {
   background: #00589d;
 }
+.bg-cyan {
+  background-color: #00ADD8; 
+}
 .text-white {
   color: #fff;
 }
@@ -953,12 +956,18 @@ footer ul a:hover {
   border-color: #ffd43b;
   box-shadow: 0 0 10px #ffd43b80;
 }
-
-.technologies button[data-tech="MySQL"]:hover,
-.technologies button[data-tech="MySQL"].active {
-  border-color: #00758f;
-  box-shadow: 0 0 10px #00758f80;
+.technologies button[data-tech="Go"]:hover,
+.technologies button[data-tech="Go"].active {
+  border-color: #00ADD8;
+  box-shadow: 0 0 10px #00ADD880;
 }
+
+.technologies button[data-tech="POSTGRES"]:hover,
+.technologies button[data-tech="POSTGRES"].active {
+  border-color: #336791;
+  box-shadow: 0 0 10px #33679180;
+}
+
 .about-me-img:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 32px rgba(255,255,255,0.2);

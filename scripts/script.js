@@ -41,6 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!tn || !target) return false;
         if (tn === target) return true;
 
+        // Special case: Java button also shows Spring projects
+        if (target === 'java' && tn === 'spring') return true;
+
         const splitTokens = s => s.split(/[^a-z0-9]+/).filter(Boolean);
         const tnTokens = splitTokens(tn);
         const targetTokens = splitTokens(target);

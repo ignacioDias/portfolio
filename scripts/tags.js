@@ -55,30 +55,20 @@ export const TAGS = {
         `,
         class: "bg-blue text-white"
     },
-    SQL: {
-        name: 'SQL',
-        icon: `
-          <svg xmlns="http://www.w3.org/2000/svg"
-              width="24" height="24" viewBox="0 0 128 128"
-              fill="currentColor" class="icon">
-
-            <!-- Base del cilindro -->
-            <path d="M51.395 24.879c-27.422 0-49.649-3.832-49.649-8.535v92.261c0 4.727 22.227 8.536 49.649 8.536 27.421 0 49.648-3.832 49.648-8.536V16.29c0 4.758-22.227 8.59-49.648 8.59z"/>
-            <path d="M1.746 16.29v92.315c0 4.727 22.227 8.536 49.649 8.536V24.879c-27.422 0-49.649-3.832-49.649-8.59z"/>
-            <path d="M101.043 16.313c0-4.723-22.23-8.555-49.648-8.555-27.422 0-49.649 3.832-49.649 8.555 0 4.726 22.227 8.558 49.649 8.558 27.417 0 49.648-3.832 49.648-8.558z"/>
-
-            <!-- Capas internas -->
-            <path d="M1.746 74.332c0 4.727 22.227 8.535 49.649 8.535 27.421 0 49.648-3.832 49.648-8.535v6.984c0 4.723-22.227 8.532-49.648 8.532-27.422 0-49.649-3.832-49.649-8.532z"/>
-            <path d="M1.746 43.582c0 4.723 22.227 8.535 49.649 8.535 27.421 0 49.648-3.836 49.648-8.535v6.98c0 4.727-22.227 8.536-49.648 8.536-27.422 0-49.649-3.832-49.649-8.535z"/>
-
-            <!-- Círculo SQL -->
-            <circle cx="97.164" cy="93.09" r="29.48"/>
-
-            <!-- Triángulo (play) -->
-            <path d="m88.063 105.906 24.027-13.87-24.028-13.872z"/>
-          </svg>
-        `,
-        class: "bg-blue text-white"
+    POSTGRES: {
+		name: 'Postgres',
+		icon: `
+		<svg xmlns="http://www.w3.org/2000/svg"
+			width="24" height="24"
+			viewBox="0 0 24 24"
+			fill="currentColor"
+			class="icon">
+			<path d="M12 2C7 2 3.6 4.6 3.6 8.4c0 3.8 3.4 9.9 8.4 9.9s8.4-6.1 8.4-9.9C20.4 4.6 17 2 12 2zm0 1.8c3.9 0 6.6 2.1 6.6 5.4 0 3.3-2.7 7.5-6.6 7.5S5.4 12.5 5.4 9.2c0-3.3 2.7-5.4 6.6-5.4z"/>
+			<circle cx="9" cy="10.8" r="1.2"/>
+			<circle cx="15" cy="10.8" r="1.2"/>
+		</svg>
+		`,
+      	class: "bg-blue text-white"
     },
     NODE: {
       name: 'NodeJS',
@@ -90,6 +80,23 @@ export const TAGS = {
         </svg>
       `,
       class: "bg-darkgreen text-white"
-    }
+    },
+    GOLANG: {
+      name: 'Go',
+      icon: `
+        <svg xmlns="http://www.w3.org/2000/svg"
+            width="24" height="24" viewBox="0 0 128 128"
+            fill="currentColor" class="icon">
 
+          <!-- Texto GO -->
+          <path d="M31.6 67.5c0-17.3 14.2-31.5 31.5-31.5 12.3 0 23 7.1 28.1 17.4h-14.2c-3.8-5.4-10-8.9-16.9-8.9-11.7 0-21.3 9.6-21.3 21.3s9.6 21.3 21.3 21.3c9.6 0 17.8-6.4 20.5-15.1H63.1v-8.7h30.8c.3 1.8.4 3.6.4 5.4 0 17.3-14.2 31.5-31.5 31.5S31.6 84.8 31.6 67.5z"/>
+
+          <!-- Líneas estilo gopher velocidad -->
+          <path d="M10 58h18M6 67h14M14 76h12"
+            stroke="currentColor" stroke-width="6"
+            stroke-linecap="round" fill="none"/>
+        </svg>
+      `,
+      class: "bg-cyan text-white"
+    }
 }

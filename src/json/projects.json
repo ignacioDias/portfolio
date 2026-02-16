@@ -9,6 +9,16 @@
     ]
   },
   {
+    "title": "Vet System",
+    "description": "Sistema backend desarrollado con Golang y PostgreSQL para la gestión de una clínica veterinaria.",
+    "github": "https://github.com/ignacioDias/vet-system",
+    "image": "src/compilator.webp",
+    "tags": [
+      "GOLANG",
+      "POSTGRES"
+    ]
+  },
+  {
     "title": "Tesis",
     "description": "Mi Tesis de Grado. Usando NodeJS, la idea es genera un software que permita a los niños introducirse en el mundo de la programación usando Blockly de Google como herramienta.",
     "github": "https://github.com/ignacioDias/drawing-with-blockly",
@@ -27,17 +37,7 @@
       "C_LANGUAGE"
     ]
   },
-  {
-    "title": "MonkeyType Clone",
-    "description": "Monkeytype permite practicar mecanografía. Ofrece ejercicios de tipeo en diferentes modos y permite medir la velocidad, precisión y consistencia.",
-    "link": "https://ignaciodias.github.io/monkeytype-clone/",
-    "github": "https://github.com/ignacioDias/monkeytype-clone/",
-    "image": "src/monkeytype-clone.webp",
-    "tags": [
-      "JS",
-      "HTML"
-    ]
-  },
+  
   {
     "title": "Sitio Web Para un Restaurante",
     "description": "Sitio web simple hecho usando NodeJS y Webpack.",
@@ -82,21 +82,11 @@
     ]
   },
   {
-    "title": "Pokémon Java",
-    "description": "Pokémon de terminal simple que busca mostrar buenas prácticas de la POO.",
-    "github": "https://github.com/ignacioDias/pokemon-java",
-    "image": "src/pokemon.webp",
-    "tags": [
-      "JAVA"
-    ]
-  },
-  {
     "title": "TODO-App",
     "description": "Simple TODO-APP hecha con Spring boot.",
     "github": "https://github.com/ignacioDias/todoapp-springboot",
     "image": "src/monkeytype-clone.webp",
     "tags": [
-      "JAVA",
       "SPRING"
     ]
   },
@@ -106,7 +96,6 @@
     "github": "https://github.com/ignacioDias/family-cashcard",
     "image": "src/family.webp",
     "tags": [
-      "JAVA",
       "SPRING",
       "JS",
       "HTML"
@@ -118,7 +107,6 @@
     "github": "https://github.com/ignacioDias/blog",
     "image": "src/blog.webp",
     "tags": [
-      "JAVA",
       "SPRING",
       "JS",
       "HTML"
