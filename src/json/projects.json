@@ -12,7 +12,7 @@
     "title": "Vet System",
     "description": "Sistema backend desarrollado con Golang y PostgreSQL para la gestión de una clínica veterinaria. Frontend con Javascript vanilla.",
     "github": "https://github.com/ignacioDias/vet-system",
-    "image": "src/compilator.webp",
+    "image": "src/vet.webp",
     "tags": [
       "GOLANG",
       "POSTGRES",
