@@ -37,18 +37,6 @@
       "C_LANGUAGE"
     ]
   },
-  
-  {
-    "title": "Sitio Web Para un Restaurante",
-    "description": "Sitio web simple hecho usando NodeJS y Webpack.",
-    "github": "https://github.com/ignacioDias/webpack-restaurant-project",
-    "image": "src/restaurant.webp",
-    "tags": [
-      "JS",
-      "NODE",
-      "HTML"
-    ]
-  },
   {
     "title": "Portfolio",
     "description": "Sitio web personal donde muestro mis conocimientos y cuento un poco sobre mí.",
@@ -60,7 +48,7 @@
     ]
   },
   {
-    "title": "Sistena de biblioteca",
+    "title": "Sistema de biblioteca",
     "description": "Pequeño sistema para almacenar libros.",
     "link": "https://ignaciodias.github.io/library-js/",
     "github": "https://github.com/ignacioDias/library-js",
