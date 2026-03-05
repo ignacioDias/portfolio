@@ -16,7 +16,8 @@
     "tags": [
       "GOLANG",
       "POSTGRES",
-      "JS"
+      "JS",
+      "HTML"
     ]
   },
   {
@@ -38,22 +39,24 @@
       "C_LANGUAGE"
     ]
   },
+    {
+    "title": "Markdown Editor",
+    "description": "Sistema backend desarrollado con Golang y (usando docker) Redis y PostgreSQL para la gestión de una aplicación para editar y visualizar archivos md. Frontend en desarrollo con Javascript vanilla.",
+    "github": "https://github.com/ignacioDias/vet-system",
+    "image": "src/mdeditor.webp",
+    "tags": [
+      "GOLANG",
+      "POSTGRES",
+      "JS",
+      "HTML"
+
+    ]
+  },
   {
     "title": "Portfolio",
     "description": "Sitio web personal donde muestro mis conocimientos y cuento un poco sobre mí.",
     "github": "https://github.com/ignacioDias/portfolio",
     "image": "src/portfolio.webp",
-    "tags": [
-      "JS",
-      "HTML"
-    ]
-  },
-  {
-    "title": "Sistema de biblioteca",
-    "description": "Pequeño sistema para almacenar libros.",
-    "link": "https://ignaciodias.github.io/library-js/",
-    "github": "https://github.com/ignacioDias/library-js",
-    "image": "src/library.webp",
     "tags": [
       "JS",
       "HTML"
@@ -69,45 +72,6 @@
       "JS",
       "HTML"
     ]
-  },
-  {
-    "title": "TODO-App",
-    "description": "Simple TODO-APP hecha con Spring boot.",
-    "github": "https://github.com/ignacioDias/todoapp-springboot",
-    "image": "src/monkeytype-clone.webp",
-    "tags": [
-      "SPRING"
-    ]
-  },
-  {
-    "title": "Family-Cashcards",
-    "description": "APP hecha con Spring boot para manejar gastos familiares. Usando Basic Auth.",
-    "github": "https://github.com/ignacioDias/family-cashcard",
-    "image": "src/family.webp",
-    "tags": [
-      "SPRING",
-      "JS",
-      "HTML"
-    ]
-  },
-  {
-    "title": "Blog App",
-    "description": "APP hecha con Spring boot para operaciones CRUD sobre artículos. Usando Basic Auth.",
-    "github": "https://github.com/ignacioDias/blog",
-    "image": "src/blog.webp",
-    "tags": [
-      "SPRING",
-      "JS",
-      "HTML"
-    ]
-  },
-  {
-    "title": "Weather App",
-    "description": "App de línea de comandos que recibe una ciudad, obtiene sus coordenadas usando la API de Geocoding y muestra en la terminal el clima actual.",
-    "github": "https://github.com/ignacioDias/weather-app",
-    "image": "src/weather.webp",
-    "tags": [
-      "JAVA"
-    ]
   }
+ 
 ]
