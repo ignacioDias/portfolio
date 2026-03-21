@@ -695,12 +695,6 @@ footer span a:hover { color: var(--primary); }
   box-shadow: 0 0 10px #f8982080;
 }
 
-.technologies button[data-tech="Spring"]:hover,
-.technologies button[data-tech="Spring"].active {
-  border-color: #6db33f;
-  box-shadow: 0 0 10px #6db33f80;
-}
-
 .technologies button[data-tech="Python"]:hover,
 .technologies button[data-tech="Python"].active {
   border-color: #ffd43b;
