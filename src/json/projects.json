@@ -30,6 +30,15 @@
       "NODE"
     ]
   },
+    {
+    "title": "Spam Detector - LLM From Scratch",
+    "description": "Entrené un modelo para poder diferenciar correos spam de aquellos que no lo son.",
+    "github": "https://github.com/ignacioDias/spam-detector-llm",
+    "image": "src/llm.webp",
+    "tags": [
+      "PYTHON"
+    ]
+  },
   {
     "title": "Implementación de Hash Table",
     "description": "Desarrollé una implementación de dicha estructura de datos con el algoritmo FNV-1a",
