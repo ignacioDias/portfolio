@@ -268,8 +268,8 @@ section,
 }
 .link-boton:active { transform: scale(0.97); }
 
-/* ── Experience / Timeline ─────────────────────────────────── */
-#experience { padding-bottom: 4rem; }
+/* ── academic-background / Timeline ─────────────────────────────────── */
+#academic-background { padding-bottom: 4rem; }
 
 .timeline {
   position: relative;
@@ -553,11 +553,11 @@ section,
 }
 
 /* ── About Me ──────────────────────────────────────────────── */
-#sobre-mi {
+#about-me {
   border-top: 1px solid rgba(72, 72, 71, 0.25);
 }
 
-#sobre-mi h2 {
+#about-me h2 {
   font-family: var(--font-headline);
   font-size: clamp(1.75rem, 4vw, 2.5rem);
   font-weight: 700;
@@ -581,12 +581,12 @@ section,
 }
 .about-me-img:hover { filter: grayscale(0%); }
 
-#sobre-mi p {
+#about-me p {
   font-size: 0.95rem;
   color: var(--on-surface-dim);
   line-height: 1.8;
 }
-#sobre-mi strong { color: var(--on-surface); font-weight: 600; }
+#about-me strong { color: var(--on-surface); font-weight: 600; }
 
 /* ── Footer ────────────────────────────────────────────────── */
 footer {
