@@ -40,12 +40,16 @@
     ]
   },
   {
-    "title": "Implementación de Hash Table",
-    "description": "Desarrollé una implementación de dicha estructura de datos con el algoritmo FNV-1a",
-    "github": "https://github.com/ignacioDias/hash-table-in-c",
-    "image": "src/hash-table.webp",
+    "title": "Cinema System",
+    "description": "Desarrollé un proyecto para mostrar proyecciones, hacer reservas y demás.",
+    "github": "https://github.com/ignacioDias/movie-reservation-sys",
+    "image": "src/cinema.webp",
     "tags": [
-      "C_LANGUAGE"
+      "GOLANG",
+      "REDIS",
+      "POSTGRES",
+      "JS",
+      "HTML"
     ]
   },
     {
