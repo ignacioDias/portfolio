@@ -1,7 +1,7 @@
 [
   {
     "title": "Compilador",
-    "description": "Desarrollamos un compilador para un lenguaje propio. Usando Bison y Flex.",
+    "description": "Desarrollé un compilador para un lenguaje propio. Usando Bison y Flex.",
     "github": "https://github.com/ignacioDias/final-project-compilador",
     "image": "src/compilator.webp",
     "tags": [
