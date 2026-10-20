@@ -63,14 +63,21 @@ document.addEventListener('DOMContentLoaded', () => {
       // Toggle: if same tech clicked again, clear filter
       if (currentTechnology === tech) {
         currentTechnology = null;
-        buttons.forEach(b => b.classList.remove('active'));
+        buttons.forEach(b => {
+          b.classList.remove('active');
+          b.setAttribute('aria-pressed', 'false');
+        });
         showAllProjects();
         return;
       }
 
       // Set new tech and filter
       currentTechnology = tech;
-      buttons.forEach(b => b.classList.toggle('active', b === button));
+      buttons.forEach(b => {
+        const active = b === button;
+        b.classList.toggle('active', active);
+        b.setAttribute('aria-pressed', active ? 'true' : 'false');
+      });
       filterProjectsByTech(currentTechnology);
     });
   });
@@ -79,6 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const preActive = document.querySelector('.technologies button.active[data-tech]');
   if (preActive) {
     currentTechnology = preActive.dataset.tech;
+    preActive.setAttribute('aria-pressed', 'true');
     filterProjectsByTech(currentTechnology);
   }
 });

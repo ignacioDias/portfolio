@@ -1,26 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de Ignacio Dias Gundin: estudiante de Ciencias de la Computación, Analista en Computación y desarrollador con experiencia en proyectos de programación y tecnología.">
-    <title>Ignacio Dias Gundin - Portfolio</title>
+    <meta name="description" content="Portfolio de Ignacio Dias Gundin, desarrollador backend y estudiante de la Licenciatura en Ciencias de la Computación. Proyectos en Go, PostgreSQL, Node.js y Python.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Ignacio Dias Gundin">
+    <meta name="theme-color" content="#0e0e0e">
+    <link rel="canonical" href="https://idias.me/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="Ignacio Dias Gundin">
+    <meta property="og:title" content="Ignacio Dias Gundin — Desarrollador Backend">
+    <meta property="og:description" content="Portfolio de Ignacio Dias Gundin, desarrollador backend. Proyectos en Go, PostgreSQL, Node.js y Python.">
+    <meta property="og:url" content="https://idias.me/">
+    <meta property="og:image" content="https://idias.me/src/ignacio.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ignacio Dias Gundin — Desarrollador Backend">
+    <meta name="twitter:description" content="Portfolio de Ignacio Dias Gundin, desarrollador backend. Proyectos en Go, PostgreSQL, Node.js y Python.">
+    <meta name="twitter:image" content="https://idias.me/src/ignacio.webp">
+
+    <title>Ignacio Dias Gundin — Desarrollador Backend | Portfolio</title>
     <link rel="stylesheet" href="style/style.css" />
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='128' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M10 16v-8l4 8v-8' /%3E%3C/svg%3E">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ignacio Dias Gundin",
+      "url": "https://idias.me/",
+      "image": "https://idias.me/src/ignacio.webp",
+      "jobTitle": "Desarrollador de Software Backend",
+      "alumniOf": "Universidad Nacional de Río Cuarto",
+      "knowsAbout": ["Desarrollo Backend", "Go", "PostgreSQL", "JavaScript", "Node.js", "Python", "C", "Java", "Redis"],
+      "sameAs": [
+        "https://linkedin.com/in/ignacio-dias-gundin",
+        "https://github.com/ignacioDias"
+      ]
+    }
+    </script>
 </head>
 <body>
+    <a class="skip-link" href="#presentacion">Saltar al contenido</a>
     <div class="fondo"> </div>
     <header class="header">
-    <nav class="nav">
+    <nav class="nav" aria-label="Navegación principal">
         <a href="#presentacion">Inicio</a>
         <a href="#projects">Proyectos</a>
         <a href="#academic-background">Formación</a>
         <a href="#about-me">Sobre mí</a>
-        <a class="mail-btn" type="button" style="cursor:pointer;">Contacto</a>
+        <button type="button" class="mail-btn nav-mail-btn">Contacto</button>
     </nav>
     </header>
     <section class="presentacion" id="presentacion">
-        <img class="my-picture" src="src/ignacio.webp" alt="photo" />
+        <img class="my-picture" src="src/ignacio.webp" alt="Foto de Ignacio Dias Gundin" />
         <h1 class="titulo">
             Ignacio Dias Gundin
             <a href="https://linkedin.com/in/ignacio-dias-gundin" 
@@ -49,10 +84,10 @@
                 </svg>
                 GitHub
             </a>
-            <a class="link-boton mail-btn" type="button" style="cursor:pointer;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-mail" class="icon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
+            <button type="button" class="link-boton mail-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
               Correo
-            </a>
+            </button>
             <a class="link-boton" href="src/cv.pdf" download>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-file-type-pdf"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" /><path d="M5 18h1.5a1.5 1.5 0 0 0 0 -3h-1.5v6" /><path d="M17 18h2" /><path d="M20 15h-3v6" /><path d="M11 15v6h1a2 2 0 0 0 2 -2v-2a2 2 0 0 0 -2 -2h-1z" /></svg>
                 CV
@@ -60,13 +95,13 @@
         </nav>
     </section>
 
-    <div class="technologies" align="center">
-        <button data-tech="JavaScript"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="javascript logo" /></button>
-        <button data-tech="C_LANGUAGE"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="c logo" /></button>
-        <button data-tech="Go"><img src="https://devicon-website.vercel.app/api/go/original.svg" alt="go logo" /></button>
-        <button data-tech="Java"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="java logo" /></button>
-        <button data-tech="Python"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="python logo" /></button>
-        <button data-tech="POSTGRES"><img src="https://devicon-website.vercel.app/api/postgresql/original.svg" alt="Postgers logo" /></button>
+    <div class="technologies">
+        <button type="button" data-tech="JavaScript" aria-label="Filtrar proyectos por JavaScript" aria-pressed="false"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" aria-hidden="true" /></button>
+        <button type="button" data-tech="C_LANGUAGE" aria-label="Filtrar proyectos por C" aria-pressed="false"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="" aria-hidden="true" /></button>
+        <button type="button" data-tech="Go" aria-label="Filtrar proyectos por Go" aria-pressed="false"><img src="https://devicon-website.vercel.app/api/go/original.svg" alt="" aria-hidden="true" /></button>
+        <button type="button" data-tech="Java" aria-label="Filtrar proyectos por Java" aria-pressed="false"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="" aria-hidden="true" /></button>
+        <button type="button" data-tech="Python" aria-label="Filtrar proyectos por Python" aria-pressed="false"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" aria-hidden="true" /></button>
+        <button type="button" data-tech="POSTGRES" aria-label="Filtrar proyectos por PostgreSQL" aria-pressed="false"><img src="https://devicon-website.vercel.app/api/postgresql/original.svg" alt="" aria-hidden="true" /></button>
     </div>
 
     <section id="projects" class="projects">
@@ -94,7 +129,7 @@
             <p>
                 He finalizado mi cursado en dicha carrera. Actualmente me encuentro terminando de rendir los últimos finales que me quedan y completando mi tesis. Adquirí conocimientos en las bases sobre el desarrollo y funcionamiento de sistemas operativos, simulaciones, inteligencia artificial, telecomunicaciones, compiladores y sistemas distribuidos.
             </p>
-            <a href="https://github.com/ignacioDias/drawing-with-blockly" download class="timeline-link timeline-link-invertido">
+            <a href="https://github.com/ignacioDias/drawing-with-blockly" target="_blank" rel="noopener" class="timeline-link timeline-link-invertido">
                 Mi Tesis
                 <svg class="arrow-icon" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -140,17 +175,17 @@ Allí aprendí conceptos clave como estructuras de datos, programación orientad
             <span class="text-sm sm:text-center text-yellow-200/90">
                 <a href="https://linkedin.com/in/ignacio-dias-gundin" class="hover:underline">Ignacio Dias Gundin</a>.
             </span>
-            <ul class="footer-links">
+            <ul class="footer-links" aria-label="Navegación del pie de página">
                 <li><a href="#presentacion" class="link-boton">Inicio</a></li>
                 <li><a href="#projects" class="link-boton">Proyectos</a></li>
                 <li><a href="#academic-background" class="link-boton">Formación</a></li>
                 <li><a href="#about-me" class="link-boton">Sobre mí</a></li>
-                <li><a class="mail-btn link-boton" type="button" style="cursor:pointer;">Contacto</a></li>
+                <li><button type="button" class="mail-btn link-boton">Contacto</button></li>
             </ul>
         </div>
     </footer>
 
-    <div id="toast-mail" class="link-boton" style="display:none; position:fixed; bottom:32px; left:50%; transform:translateX(-50%); z-index:1000;">
+    <div id="toast-mail" role="status" aria-live="polite" class="link-boton" style="display:none; position:fixed; bottom:32px; left:50%; transform:translateX(-50%); z-index:1000;">
       ¡Correo copiado!
     </div>
     <script type="module" src="scripts/projects.js"></script>

@@ -75,6 +75,31 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
     radial-gradient(ellipse 50% 35% at 85% 75%, rgba(185, 246, 29, 0.04) 0%, transparent 70%);
 }
 
+/* ── Skip link ─────────────────────────────────────────────── */
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 200;
+  padding: 0.6rem 1rem;
+  background: var(--primary);
+  color: var(--bg);
+  font-family: var(--font-headline);
+  font-weight: 700;
+  font-size: 0.85rem;
+  border-radius: var(--radius-sm);
+  transition: top 0.2s;
+}
+.skip-link:focus {
+  top: 1rem;
+}
+
+/* ── Focus visibility (keyboard) ───────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
 /* ── Header / Nav ──────────────────────────────────────────── */
 .header {
   position: fixed;
@@ -103,17 +128,24 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   letter-spacing: -0.02em;
 }
 
-.nav a {
+.nav a,
+.nav button {
   color: var(--on-surface-dim);
   transition: color 0.2s;
   white-space: nowrap;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
 }
 
 .nav a:first-child { color: var(--primary); font-weight: 600; }
-.nav a:hover       { color: var(--on-surface); }
+.nav a:hover,
+.nav button:hover { color: var(--on-surface); }
 
 /* push Contacto to the right */
-.nav a:last-child  { margin-left: auto; color: var(--primary); font-weight: 600; }
+.nav a:last-child,
+.nav .nav-mail-btn { margin-left: auto; color: var(--primary); font-weight: 600; }
 
 /* ── Shared layout utility ─────────────────────────────────── */
 section,
@@ -713,4 +745,17 @@ footer span a:hover { color: var(--primary); }
 .technologies button[data-tech="POSTGRES"].active {
   border-color: #336791;
   box-shadow: 0 0 10px #33679180;
+}
+
+/* ── Reduced motion ────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
