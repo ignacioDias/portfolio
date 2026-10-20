@@ -21,7 +21,6 @@ let currentTechnology = null;
 
 document.addEventListener('DOMContentLoaded', () => {
   const buttons = document.querySelectorAll('.technologies button[data-tech]');
-  const allBtn = document.querySelector('.technologies .tech-all');
 
   function showAllProjects() {
     const cards = document.querySelectorAll('.project-card');
@@ -35,7 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
       b.classList.toggle('active', active);
       b.setAttribute('aria-pressed', active ? 'true' : 'false');
     });
-    if (allBtn) allBtn.setAttribute('aria-pressed', activeButton ? 'false' : 'true');
   }
 
   function filterProjectsByTech(tech) {
@@ -84,19 +82,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  if (allBtn) {
-    allBtn.addEventListener('click', () => {
-      setActiveTech(null);
-      showAllProjects();
-    });
-  }
-
   // If there is an active button in the DOM by default, apply its filter
   const preActive = document.querySelector('.technologies button.active[data-tech]');
   if (preActive) {
     currentTechnology = preActive.dataset.tech;
     preActive.setAttribute('aria-pressed', 'true');
-    if (allBtn) allBtn.setAttribute('aria-pressed', 'false');
     filterProjectsByTech(currentTechnology);
   }
 });
