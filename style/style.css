@@ -432,6 +432,24 @@ section,
 }
 .technologies button.active img { filter: grayscale(0%); }
 
+.technologies .tech-all {
+  width: auto;
+  padding: 0 1.25rem;
+  font-family: var(--font-headline);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--on-surface-dim);
+  transition: background 0.2s, border-color 0.2s, transform 0.15s, color 0.2s;
+}
+.technologies .tech-all:hover { color: var(--on-surface); }
+.technologies .tech-all[aria-pressed="true"] {
+  background: rgba(129, 236, 255, 0.10);
+  border-color: rgba(129, 236, 255, 0.50);
+  box-shadow: 0 0 12px rgba(129, 236, 255, 0.12);
+  color: var(--primary);
+}
+
 /* ── Projects grid ─────────────────────────────────────────── */
 .projects { padding-top: 1rem; }
 
@@ -592,15 +610,17 @@ section,
   border-top: 1px solid rgba(72, 72, 71, 0.25);
 }
 
-#about-me h2 {
-  font-family: var(--font-headline);
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
-  font-weight: 700;
-  letter-spacing: -0.04em;
-  margin-bottom: 1.75rem;
+.about-me-layout {
   display: flex;
-  align-items: center;
-  gap: 0.6rem;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.about-me-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
 }
 
 .about-me-img {
@@ -630,11 +650,20 @@ footer {
   border-top: 1px solid rgba(72, 72, 71, 0.25);
 }
 
-footer .w-full { max-width: var(--max-w); margin: 0 auto; padding: 1.5rem 2rem; }
+footer .footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+}
 
-footer span a,
-footer .text-sm { font-size: 0.8rem; color: var(--on-surface-dim); }
-footer span a:hover { color: var(--primary); }
+footer .footer-name,
+footer .footer-name a { font-size: 0.8rem; color: var(--on-surface-dim); }
+footer .footer-name a:hover { color: var(--primary); }
 
 .footer-links {
   display: flex;
@@ -680,12 +709,14 @@ footer span a:hover { color: var(--primary); }
 
   .about-me-img { width: 100px; height: 120px; }
 
+  .about-me-layout { flex-direction: column; }
+
   .timeline { padding-left: 1.5rem; }
   .timeline-point { left: -1.9rem; }
 
   .footer-links { display: none; }
 
-  footer .w-full {
+  footer .footer-inner {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;

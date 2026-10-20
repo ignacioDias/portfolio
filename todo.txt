@@ -1,1 +1,0 @@
-hacer que cada tecnología sea un botón que filtre cada proyecto

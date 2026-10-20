@@ -54,6 +54,7 @@
         <button type="button" class="mail-btn nav-mail-btn">Contacto</button>
     </nav>
     </header>
+    <main>
     <section class="presentacion" id="presentacion">
         <img class="my-picture" src="src/ignacio.webp" alt="Foto de Ignacio Dias Gundin" />
         <h1 class="titulo">
@@ -66,10 +67,7 @@
             </a>
         </h1>
         <h2 class="subtitulo">
-            <span>Soy Ignacio Dias Gundin, estudiante de la Licenciatura en Ciencias de la Computación.</span>
-            <span class="texto-destacado"> Curso en la Universidad Nacional de Río Cuarto.</span>
-            <span class="texto-opaco"> Además de mi formación académica, he complementado mis conocimientos mediante cursos online.</span>
-            Me interesa especialmente el desarrollo <strong>backend</strong>.
+            Estudiante de la Licenciatura en Ciencias de la Computación en la Universidad Nacional de Río Cuarto, con interés en el desarrollo <strong>backend</strong>. Complemento mi formación académica con proyectos personales y cursos online, a través de los cuales busco profundizar mis conocimientos y seguir aprendiendo sobre el desarrollo de software.
         </h2>
         <nav class="link-botones">
             <a class="link-boton" href="https://linkedin.com/in/ignacio-dias-gundin" target="_blank" rel="noopener">
@@ -80,7 +78,7 @@
             </a>
             <a class="link-boton" href="https://github.com/ignacioDias" target="_blank" rel="noopener">
                 <svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" transform="scale(64)" fill="#ffff"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" transform="scale(64)" fill="currentColor"/>
                 </svg>
                 GitHub
             </a>
@@ -96,6 +94,7 @@
     </section>
 
     <div class="technologies">
+        <button type="button" class="tech-all" aria-pressed="true">Todos</button>
         <button type="button" data-tech="JavaScript" aria-label="Filtrar proyectos por JavaScript" aria-pressed="false"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" aria-hidden="true" /></button>
         <button type="button" data-tech="C_LANGUAGE" aria-label="Filtrar proyectos por C" aria-pressed="false"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="" aria-hidden="true" /></button>
         <button type="button" data-tech="Go" aria-label="Filtrar proyectos por Go" aria-pressed="false"><img src="https://devicon-website.vercel.app/api/go/original.svg" alt="" aria-hidden="true" /></button>
@@ -153,27 +152,29 @@ Allí aprendí conceptos clave como estructuras de datos, programación orientad
             </li>
         </ul>
     </section>
-    <section id="about-me" data-section="about-me" class="presentacion section w-full mx-auto container lg:max-w-4xl md:max-w-2xl scroll-m-20">
-        <h2 class="flex items-center justify-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white">
-            <svg class="size-8" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path><path d="M6 21v-2a4 4 0 0 1 4 -4h4"></path><path d="M15 19l2 2l4 -4"></path></svg>
+    <section id="about-me">
+        <h2 class="section-heading">
+            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path><path d="M6 21v-2a4 4 0 0 1 4 -4h4"></path><path d="M15 19l2 2l4 -4"></path></svg>
             Sobre mí
         </h2>
-        <div style="display: flex; align-items: flex-start; gap: 32px;">
-            <img src="src/ignacio.webp" alt="Ignacio Dias Gundin" class="about-me-img mb-4" style="object-position: 50% 50%;">
-            <p>
-                Actualmente me encuentro en el <strong>quinto año de la carrera</strong> y sólo me queda 
-                <strong>rendir los finales pendientes</strong> y completar mi <strong>Tesis de Grado</strong> para poder recibirme.<br>
-                En este momento me encuentro <strong>desarrollando la tesis</strong> y mi objetivo es 
-                <strong>finalizar la carrera el próximo año</strong>.<br>
-                A lo largo de la cursada he adquirido conocimientos sólidos en 
-                <strong>algoritmos, estructuras de datos, bases de datos y desarrollo de software</strong>, entre otras áreas.<br>
-            </p>
+        <div class="about-me-layout">
+            <img src="src/ignacio.webp" alt="Ignacio Dias Gundin" class="about-me-img">
+            <div class="about-me-text">
+                <p>
+                    Actualmente curso el <strong>quinto año</strong> de la Licenciatura en Ciencias de la Computación en la Universidad Nacional de Río Cuarto. Me encuentro desarrollando mi <strong>tesis de grado</strong> y preparando los finales pendientes, con el objetivo de finalizar la carrera el próximo año.
+                    Durante mi formación académica he adquirido conocimientos en <strong>algoritmos, estructuras de datos, bases de datos y desarrollo de software</strong>, entre otras áreas. Complemento estos conocimientos con proyectos personales y cursos online, que me permiten profundizar lo aprendido y continuar desarrollando mis habilidades.
+                </p>
+                <p>
+                    Tengo especial interés en el desarrollo <strong>backend</strong> y busco seguir creciendo profesionalmente, aplicar mis conocimientos en proyectos reales y adquirir experiencia en el desarrollo de software.
+                </p>
+            </div>
         </div>
     </section>
-    <footer class="rounded-lg shadow m-4 bg-black/20 backdrop-blur-lg w-full xl:w-[1120px] mx-auto mb-10">
-        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-            <span class="text-sm sm:text-center text-yellow-200/90">
-                <a href="https://linkedin.com/in/ignacio-dias-gundin" class="hover:underline">Ignacio Dias Gundin</a>.
+    </main>
+    <footer>
+        <div class="footer-inner">
+            <span class="footer-name">
+                <a href="https://linkedin.com/in/ignacio-dias-gundin">Ignacio Dias Gundin</a>.
             </span>
             <ul class="footer-links" aria-label="Navegación del pie de página">
                 <li><a href="#presentacion" class="link-boton">Inicio</a></li>

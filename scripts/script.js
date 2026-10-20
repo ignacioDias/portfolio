@@ -21,10 +21,21 @@ let currentTechnology = null;
 
 document.addEventListener('DOMContentLoaded', () => {
   const buttons = document.querySelectorAll('.technologies button[data-tech]');
+  const allBtn = document.querySelector('.technologies .tech-all');
 
   function showAllProjects() {
     const cards = document.querySelectorAll('.project-card');
     cards.forEach(card => card.style.display = '');
+  }
+
+  function setActiveTech(activeButton) {
+    currentTechnology = activeButton ? activeButton.getAttribute('data-tech') : null;
+    buttons.forEach(b => {
+      const active = b === activeButton;
+      b.classList.toggle('active', active);
+      b.setAttribute('aria-pressed', active ? 'true' : 'false');
+    });
+    if (allBtn) allBtn.setAttribute('aria-pressed', activeButton ? 'false' : 'true');
   }
 
   function filterProjectsByTech(tech) {
@@ -62,31 +73,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Toggle: if same tech clicked again, clear filter
       if (currentTechnology === tech) {
-        currentTechnology = null;
-        buttons.forEach(b => {
-          b.classList.remove('active');
-          b.setAttribute('aria-pressed', 'false');
-        });
+        setActiveTech(null);
         showAllProjects();
         return;
       }
 
       // Set new tech and filter
-      currentTechnology = tech;
-      buttons.forEach(b => {
-        const active = b === button;
-        b.classList.toggle('active', active);
-        b.setAttribute('aria-pressed', active ? 'true' : 'false');
-      });
+      setActiveTech(button);
       filterProjectsByTech(currentTechnology);
     });
   });
+
+  if (allBtn) {
+    allBtn.addEventListener('click', () => {
+      setActiveTech(null);
+      showAllProjects();
+    });
+  }
 
   // If there is an active button in the DOM by default, apply its filter
   const preActive = document.querySelector('.technologies button.active[data-tech]');
   if (preActive) {
     currentTechnology = preActive.dataset.tech;
     preActive.setAttribute('aria-pressed', 'true');
+    if (allBtn) allBtn.setAttribute('aria-pressed', 'false');
     filterProjectsByTech(currentTechnology);
   }
 });
