@@ -1,16 +1,31 @@
 import { TAGS } from "./tags.js";
+import { getLang, onLanguageChange } from "./i18n.js";
+
+let PROJECTS = [];
 
 async function init() {
   const res = await fetch("./src/json/projects.json");
-  const PROJECTS = await res.json();
-  renderProjects(PROJECTS);
+  PROJECTS = await res.json();
+  renderProjects();
 }
 
-function renderProjects(PROJECTS) {
+function localize(project) {
+  const en = getLang() === "en";
+  return {
+    title: en && project.title_en ? project.title_en : project.title,
+    description:
+      en && project.description_en
+        ? project.description_en
+        : project.description,
+  };
+}
+
+function renderProjects() {
   const projectContainer = document.getElementById("projects-list");
   projectContainer.innerHTML = "";
 
   PROJECTS.forEach((project) => {
+    const { title, description } = localize(project);
     const tagObjects = project.tags.map((tagId) => TAGS[tagId]);
 
     const article = document.createElement("article");
@@ -19,12 +34,12 @@ function renderProjects(PROJECTS) {
     article.innerHTML = `
       <div class="project-img-col">
         <div class="project-image-wrapper">
-          <img src="${project.image}" alt="${project.title}" class="project-image" loading="lazy"/>
+          <img src="${project.image}" alt="${title}" class="project-image" loading="lazy"/>
         </div>
       </div>
 
       <div class="project-info-col">
-        <h3>${project.title}</h3>
+        <h3>${title}</h3>
 
         <ul class="project-tags">
           ${tagObjects
@@ -39,7 +54,7 @@ function renderProjects(PROJECTS) {
             .join("")}
         </ul>
 
-        <p class="project-description">${project.description}</p>
+        <p class="project-description">${description}</p>
 
         <footer class="project-footer">
           ${
@@ -71,4 +86,5 @@ function renderProjects(PROJECTS) {
   });
 }
 
+onLanguageChange(() => renderProjects());
 init();

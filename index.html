@@ -43,30 +43,34 @@
     </script>
 </head>
 <body>
-    <a class="skip-link" href="#presentacion">Saltar al contenido</a>
+    <a class="skip-link" href="#presentacion" data-i18n="skip_content">Saltar al contenido</a>
     <div class="fondo"> </div>
     <header class="header">
-    <nav class="nav" aria-label="Navegación principal">
-        <a href="#presentacion">Inicio</a>
-        <a href="#projects">Proyectos</a>
-        <a href="#academic-background">Formación</a>
-        <a href="#about-me">Sobre mí</a>
-        <button type="button" class="mail-btn nav-mail-btn">Contacto</button>
+    <nav class="nav" aria-label="Navegación principal" data-i18n-aria-label="nav_main">
+        <a href="#presentacion" data-i18n="nav_home">Inicio</a>
+        <a href="#projects" data-i18n="nav_projects">Proyectos</a>
+        <a href="#academic-background" data-i18n="nav_education">Formación</a>
+        <a href="#about-me" data-i18n="nav_about">Sobre mí</a>
+        <button type="button" class="mail-btn nav-mail-btn" data-i18n="nav_contact">Contacto</button>
+        <button type="button" id="lang-toggle" class="lang-toggle" aria-label="Cambiar idioma" aria-pressed="false">
+            <span class="lang-option lang-option-es">ES</span>
+            <span class="lang-option lang-option-en">EN</span>
+        </button>
     </nav>
     </header>
     <main>
     <section class="presentacion" id="presentacion">
-        <img class="my-picture" src="src/ignacio.webp" alt="Foto de Ignacio Dias Gundin" />
+        <img class="my-picture" src="src/ignacio.webp" alt="Foto de Ignacio Dias Gundin" data-i18n-alt="picture_alt" />
         <h1 class="titulo">
             Ignacio Dias Gundin
             <a href="https://linkedin.com/in/ignacio-dias-gundin" 
             target="_blank" 
             rel="noopener" 
             class="linkedin-link">
-            <span class="badge">Buscando Trabajo</span>
+            <span class="badge" data-i18n="badge_open_to_work">Buscando Trabajo</span>
             </a>
         </h1>
-        <h2 class="subtitulo">
+        <h2 class="subtitulo" data-i18n-html="subtitle">
             Estudiante de la Licenciatura en Ciencias de la Computación en la Universidad Nacional de Río Cuarto, con interés en el desarrollo <strong>backend</strong>. Complemento mi formación académica con proyectos personales y cursos online, a través de los cuales busco profundizar mis conocimientos y seguir aprendiendo sobre el desarrollo de software.
         </h2>
         <nav class="link-botones">
@@ -84,7 +88,7 @@
             </a>
             <button type="button" class="link-boton mail-btn">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
-              Correo
+              <span data-i18n="mail">Correo</span>
             </button>
             <a class="link-boton" href="src/cv.pdf" download>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-file-type-pdf"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" /><path d="M5 18h1.5a1.5 1.5 0 0 0 0 -3h-1.5v6" /><path d="M17 18h2" /><path d="M20 15h-3v6" /><path d="M11 15v6h1a2 2 0 0 0 2 -2v-2a2 2 0 0 0 -2 -2h-1z" /></svg>
@@ -94,18 +98,18 @@
     </section>
 
     <div class="technologies">
-        <button type="button" data-tech="JavaScript" aria-label="Filtrar proyectos por JavaScript" aria-pressed="false"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" aria-hidden="true" /></button>
-        <button type="button" data-tech="C_LANGUAGE" aria-label="Filtrar proyectos por C" aria-pressed="false"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="" aria-hidden="true" /></button>
-        <button type="button" data-tech="Go" aria-label="Filtrar proyectos por Go" aria-pressed="false"><img src="https://devicon-website.vercel.app/api/go/original.svg" alt="" aria-hidden="true" /></button>
-        <button type="button" data-tech="Java" aria-label="Filtrar proyectos por Java" aria-pressed="false"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="" aria-hidden="true" /></button>
-        <button type="button" data-tech="Python" aria-label="Filtrar proyectos por Python" aria-pressed="false"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" aria-hidden="true" /></button>
-        <button type="button" data-tech="POSTGRES" aria-label="Filtrar proyectos por PostgreSQL" aria-pressed="false"><img src="https://devicon-website.vercel.app/api/postgresql/original.svg" alt="" aria-hidden="true" /></button>
+        <button type="button" data-tech="JavaScript" aria-label="Filtrar proyectos por JavaScript" data-i18n-aria-label="filter_js" aria-pressed="false"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" aria-hidden="true" /></button>
+        <button type="button" data-tech="C_LANGUAGE" aria-label="Filtrar proyectos por C" data-i18n-aria-label="filter_c" aria-pressed="false"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="" aria-hidden="true" /></button>
+        <button type="button" data-tech="Go" aria-label="Filtrar proyectos por Go" data-i18n-aria-label="filter_go" aria-pressed="false"><img src="https://devicon-website.vercel.app/api/go/original.svg" alt="" aria-hidden="true" /></button>
+        <button type="button" data-tech="Java" aria-label="Filtrar proyectos por Java" data-i18n-aria-label="filter_java" aria-pressed="false"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="" aria-hidden="true" /></button>
+        <button type="button" data-tech="Python" aria-label="Filtrar proyectos por Python" data-i18n-aria-label="filter_python" aria-pressed="false"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" aria-hidden="true" /></button>
+        <button type="button" data-tech="POSTGRES" aria-label="Filtrar proyectos por PostgreSQL" data-i18n-aria-label="filter_postgres" aria-pressed="false"><img src="https://devicon-website.vercel.app/api/postgresql/original.svg" alt="" aria-hidden="true" /></button>
     </div>
 
     <section id="projects" class="projects">
         <h2 class="section-heading">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-code"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 8l-4 4l4 4" /><path d="M17 8l4 4l-4 4" /><path d="M14 4l-4 16" /></svg>
-            Proyectos
+            <span data-i18n="heading_projects">Proyectos</span>
         </h2>
         <div id="projects-list"></div>
     </section>
@@ -116,19 +120,19 @@
                 <path d="M3 9a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9z" />
                 <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" />
             </svg>
-            Formación Académica
+            <span data-i18n="heading_education">Formación Académica</span>
         </h2>
 
         <ul class="timeline">
             <li class="timeline-item">
             <div class="timeline-point"></div>
-            <time>Presente</time>
-            <h3 class="texto-destacado">Cursando la Licenciatura</h3>
-            <p>
+            <time data-i18n="tl_present">Presente</time>
+            <h3 class="texto-destacado" data-i18n="tl_degree_title">Cursando la Licenciatura</h3>
+            <p data-i18n="tl_degree_desc">
                 He finalizado mi cursado en dicha carrera. Actualmente me encuentro terminando de rendir los últimos finales que me quedan y completando mi tesis. Adquirí conocimientos en las bases sobre el desarrollo y funcionamiento de sistemas operativos, simulaciones, inteligencia artificial, telecomunicaciones, compiladores y sistemas distribuidos.
             </p>
             <a href="https://github.com/ignacioDias/drawing-with-blockly" target="_blank" rel="noopener" class="timeline-link timeline-link-invertido">
-                Mi Tesis
+                <span data-i18n="tl_thesis">Mi Tesis</span>
                 <svg class="arrow-icon" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
@@ -136,34 +140,34 @@
             </li>
             <li class="timeline-item">
             <div class="timeline-point"></div>
-            <time>Noviembre 2023</time>
-            <h3 class="texto-destacado">Recibido en Analista en Computación</h3>
-            <p>
+            <time data-i18n="tl_nov2023">Noviembre 2023</time>
+            <h3 class="texto-destacado" data-i18n="tl_analyst_title">Recibido en Analista en Computación</h3>
+            <p data-i18n="tl_analyst_desc">
             Finalicé esta carrera, en la cual recibí una formación sólida en las bases de la programación, fundamentales para mi desarrollo profesional actual.
 Ahí aprendí conceptos clave como estructuras de datos, programación orientada a objetos y funcional, paradigmas de programación, bases de datos, desarrollo de APIs REST, así como los fundamentos de la algorítmica, matemáticas, estadística y otras herramientas esenciales para comprender y resolver problemas computacionales.
             </p>
             </li>
             <li class="timeline-item">
             <div class="timeline-point"></div>
-            <time>Diciembre 2019</time>
-            <h3 class="texto-destacado">Egresado en Escuelas Pías de Río Cuarto</h3>
-            <p>Con especialidad en Ciencias Sociales, una formación que fortaleció mis habilidades de análisis, comunicación y comprensión de problemas, complementando mi desarrollo posterior en computación.</p>
+            <time data-i18n="tl_dec2019">Diciembre 2019</time>
+            <h3 class="texto-destacado" data-i18n="tl_school_title">Egresado en Escuelas Pías de Río Cuarto</h3>
+            <p data-i18n="tl_school_desc">Con especialidad en Ciencias Sociales, una formación que fortaleció mis habilidades de análisis, comunicación y comprensión de problemas, complementando mi desarrollo posterior en computación.</p>
             </li>
         </ul>
     </section>
     <section id="about-me">
         <h2 class="section-heading">
             <svg class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path><path d="M6 21v-2a4 4 0 0 1 4 -4h4"></path><path d="M15 19l2 2l4 -4"></path></svg>
-            Sobre mí
+            <span data-i18n="heading_about">Sobre mí</span>
         </h2>
         <div class="about-me-layout">
             <img src="src/ignacio.webp" alt="Ignacio Dias Gundin" class="about-me-img">
             <div class="about-me-text">
-                <p>
+                <p data-i18n-html="about_p1">
                     Actualmente curso el <strong>quinto año</strong> de la Licenciatura en Ciencias de la Computación en la Universidad Nacional de Río Cuarto. Me encuentro desarrollando mi <strong>tesis de grado</strong> y preparando los finales pendientes, con el objetivo de finalizar la carrera el próximo año.
                     Durante mi formación académica he adquirido conocimientos en <strong>algoritmos, estructuras de datos, bases de datos y desarrollo de software</strong>, entre otras áreas. Complemento estos conocimientos con proyectos personales y cursos online, que me permiten profundizar lo aprendido y continuar desarrollando mis habilidades.
                 </p>
-                <p>
+                <p data-i18n-html="about_p2">
                     Tengo especial interés en el desarrollo <strong>backend</strong> y busco seguir creciendo profesionalmente, aplicar mis conocimientos en proyectos reales y adquirir experiencia en el desarrollo de software.
                 </p>
             </div>
@@ -175,17 +179,17 @@ Ahí aprendí conceptos clave como estructuras de datos, programación orientada
             <span class="footer-name">
                 <a href="https://linkedin.com/in/ignacio-dias-gundin">Ignacio Dias Gundin</a>.
             </span>
-            <ul class="footer-links" aria-label="Navegación del pie de página">
-                <li><a href="#presentacion" class="link-boton">Inicio</a></li>
-                <li><a href="#projects" class="link-boton">Proyectos</a></li>
-                <li><a href="#academic-background" class="link-boton">Formación</a></li>
-                <li><a href="#about-me" class="link-boton">Sobre mí</a></li>
-                <li><button type="button" class="mail-btn link-boton">Contacto</button></li>
+            <ul class="footer-links" aria-label="Navegación del pie de página" data-i18n-aria-label="footer_nav">
+                <li><a href="#presentacion" class="link-boton" data-i18n="nav_home">Inicio</a></li>
+                <li><a href="#projects" class="link-boton" data-i18n="nav_projects">Proyectos</a></li>
+                <li><a href="#academic-background" class="link-boton" data-i18n="nav_education">Formación</a></li>
+                <li><a href="#about-me" class="link-boton" data-i18n="nav_about">Sobre mí</a></li>
+                <li><button type="button" class="mail-btn link-boton" data-i18n="nav_contact">Contacto</button></li>
             </ul>
         </div>
     </footer>
 
-    <div id="toast-mail" role="status" aria-live="polite" class="link-boton" style="display:none; position:fixed; bottom:32px; left:50%; transform:translateX(-50%); z-index:1000;">
+    <div id="toast-mail" role="status" aria-live="polite" class="link-boton" data-i18n="toast_copied" style="display:none; position:fixed; bottom:32px; left:50%; transform:translateX(-50%); z-index:1000;">
       ¡Correo copiado!
     </div>
     <script type="module" src="scripts/projects.js"></script>

@@ -147,6 +147,37 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 .nav a:last-child,
 .nav .nav-mail-btn { margin-left: auto; color: var(--primary); font-weight: 600; }
 
+/* ── Language toggle ───────────────────────────────────────── */
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 2px;
+  border-radius: 999px;
+  background: var(--surface-high);
+  border: 1px solid rgba(72, 72, 71, 0.45);
+  margin-left: 1rem;
+  flex-shrink: 0;
+  transition: border-color 0.2s;
+}
+.lang-toggle:hover { border-color: var(--outline); }
+
+.lang-option {
+  padding: 0.28rem 0.6rem;
+  border-radius: 999px;
+  font-family: var(--font-headline);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--on-surface-dim);
+  transition: background 0.2s, color 0.2s;
+}
+.lang-toggle.is-en .lang-option-en,
+.lang-toggle:not(.is-en) .lang-option-es {
+  background: var(--primary);
+  color: var(--bg);
+}
+
 /* ── Shared layout utility ─────────────────────────────────── */
 section,
 .technologies {

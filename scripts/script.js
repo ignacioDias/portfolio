@@ -1,3 +1,7 @@
+import { initLanguage, setLanguage, getLang, t } from './i18n.js';
+
+initLanguage();
+
 document.addEventListener('DOMContentLoaded', () => {
   const mailBtns = document.getElementsByClassName('mail-btn');
   const toast = document.getElementById('toast-mail');
@@ -8,11 +12,16 @@ document.addEventListener('DOMContentLoaded', () => {
       navigator.clipboard.writeText(email);
 
       toast.style.display = 'flex';
-      toast.textContent = '¡Correo copiado!';
+      toast.textContent = t('toast_copied');
       setTimeout(() => {
         toast.style.display = 'none';
       }, 1800);
     });
+  });
+
+  const langToggle = document.getElementById('lang-toggle');
+  langToggle.addEventListener('click', () => {
+    setLanguage(getLang() === 'es' ? 'en' : 'es');
   });
 });
 
