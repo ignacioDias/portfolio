@@ -158,9 +158,12 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   border: 1px solid rgba(72, 72, 71, 0.45);
   margin-left: 1rem;
   flex-shrink: 0;
-  transition: border-color 0.2s;
+  transition: border-color 0.2s, box-shadow 0.2s;
 }
-.lang-toggle:hover { border-color: var(--outline); }
+.lang-toggle:hover {
+  border-color: rgba(129, 236, 255, 0.5);
+  box-shadow: 0 0 10px rgba(129, 236, 255, 0.35);
+}
 
 .lang-option {
   padding: 0.28rem 0.6rem;
@@ -321,13 +324,14 @@ section,
   background: var(--surface-high);
   color: var(--on-surface-dim);
   border: 1px solid rgba(72, 72, 71, 0.45);
-  transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.1s;
+  transition: background 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s, transform 0.1s;
   white-space: nowrap;
 }
 .link-boton:hover {
-  background: var(--surface-bright);
-  color: var(--on-surface);
-  border-color: var(--outline);
+  background: rgba(129, 236, 255, 0.08);
+  color: var(--primary);
+  border-color: rgba(129, 236, 255, 0.5);
+  box-shadow: 0 0 10px rgba(129, 236, 255, 0.35);
 }
 .link-boton:active { transform: scale(0.97); }
 
@@ -419,8 +423,13 @@ section,
   border: 1px solid rgba(129, 236, 255, 0.25);
   padding: 0.3rem 0.8rem;
   border-radius: var(--radius-sm);
+  transition: gap 0.2s, background 0.2s, border-color 0.2s, box-shadow 0.2s;
 }
-.timeline-link-invertido:hover { background: rgba(129, 236, 255, 0.07); }
+.timeline-link-invertido:hover {
+  background: rgba(129, 236, 255, 0.08);
+  border-color: rgba(129, 236, 255, 0.5);
+  box-shadow: 0 0 10px rgba(129, 236, 255, 0.35);
+}
 
 .arrow-icon { width: 14px; height: 10px; }
 
@@ -611,11 +620,12 @@ section,
   padding: 0.3rem 0.7rem;
   border: 1px solid rgba(129, 236, 255, 0.25);
   border-radius: var(--radius-sm);
-  transition: background 0.2s, border-color 0.2s;
+  transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
 }
 .project-link-btn:hover {
   background: rgba(129, 236, 255, 0.08);
   border-color: rgba(129, 236, 255, 0.5);
+  box-shadow: 0 0 10px rgba(129, 236, 255, 0.35);
 }
 
 /* ── About Me ──────────────────────────────────────────────── */
