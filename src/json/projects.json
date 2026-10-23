@@ -5,7 +5,7 @@
     "description": "Compilador para un lenguaje de programación propio, implementado de punta a punta con Bison y Flex, abarcando análisis léxico, sintáctico y generación de código.",
     "description_en": "Compiler for a custom programming language, implemented end-to-end with Bison and Flex, covering lexical analysis, parsing and code generation.",
     "github": "https://github.com/ignacioDias/final-project-compilador",
-    "image": "src/compilator.webp",
+    "image": "src/compiler.webp",
     "tags": [
       "C_LANGUAGE"
     ]
