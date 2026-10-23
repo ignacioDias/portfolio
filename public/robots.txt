@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://idias.me/sitemap.xml
+Sitemap: https://ignaciodias.dev/sitemap.xml

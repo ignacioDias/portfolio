@@ -24,7 +24,7 @@ Personal portfolio site for Ignacio Dias Gundin (job-hunting). Content is in **S
 ## Deployment
 
 - GitHub Pages, auto-deployed on push to `main` via `.github/workflows/static.yml`, which runs `npm ci`, `npm run build`, and uploads `dist/`.
-- Custom domain `idias.me` is set in `public/CNAME`. SEO artifacts (`public/robots.txt`, `public/sitemap.xml`, `canonical`, JSON-LD) reference `https://idias.me/`.
+- Custom domain `ignaciodias.dev` is set in `public/CNAME`. SEO artifacts (`public/robots.txt`, `public/sitemap.xml`, `canonical`, JSON-LD) reference `https://ignaciodias.dev/`.
 
 ## Skills
 
