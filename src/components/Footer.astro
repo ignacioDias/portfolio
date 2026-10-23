@@ -1,0 +1,50 @@
+---
+import { translations } from "../i18n/translations.js";
+
+const t = translations.es;
+---
+
+<footer>
+  <div class="footer-inner">
+    <span class="footer-name">
+      <a href="https://linkedin.com/in/ignacio-dias-gundin">
+        Ignacio Dias Gundin
+      </a>.
+    </span>
+    <ul
+      class="footer-links"
+      aria-label={t.footer_nav}
+      data-i18n-aria-label="footer_nav"
+    >
+      <li>
+        <a href="#presentacion" class="link-boton" data-i18n="nav_home">
+          {t.nav_home}
+        </a>
+      </li>
+      <li>
+        <a href="#projects" class="link-boton" data-i18n="nav_projects">
+          {t.nav_projects}
+        </a>
+      </li>
+      <li>
+        <a
+          href="#academic-background"
+          class="link-boton"
+          data-i18n="nav_education"
+        >
+          {t.nav_education}
+        </a>
+      </li>
+      <li>
+        <a href="#about-me" class="link-boton" data-i18n="nav_about">
+          {t.nav_about}
+        </a>
+      </li>
+      <li>
+        <button type="button" class="mail-btn link-boton" data-i18n="nav_contact">
+          {t.nav_contact}
+        </button>
+      </li>
+    </ul>
+  </div>
+</footer>

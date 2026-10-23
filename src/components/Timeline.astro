@@ -1,0 +1,75 @@
+---
+import { translations } from "../i18n/translations.js";
+
+const t = translations.es;
+---
+
+<section id="academic-background">
+  <h2 class="section-heading">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="28"
+      height="28"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="icon"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3 9a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9z"></path>
+      <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2"></path>
+    </svg>
+    <span data-i18n="heading_education">{t.heading_education}</span>
+  </h2>
+
+  <ul class="timeline">
+    <li class="timeline-item">
+      <div class="timeline-point"></div>
+      <time data-i18n="tl_present">{t.tl_present}</time>
+      <h3 class="texto-destacado" data-i18n="tl_degree_title">
+        {t.tl_degree_title}
+      </h3>
+      <p data-i18n="tl_degree_desc">{t.tl_degree_desc}</p>
+      <a
+        href="https://github.com/ignacioDias/drawing-with-blockly"
+        target="_blank"
+        rel="noopener"
+        class="timeline-link timeline-link-invertido"
+      >
+        <span data-i18n="tl_thesis">{t.tl_thesis}</span>
+        <svg
+          class="arrow-icon"
+          viewBox="0 0 14 10"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1 5h12m0 0L9 1m4 4L9 9"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+      </a>
+    </li>
+    <li class="timeline-item">
+      <div class="timeline-point"></div>
+      <time data-i18n="tl_nov2023">{t.tl_nov2023}</time>
+      <h3 class="texto-destacado" data-i18n="tl_analyst_title">
+        {t.tl_analyst_title}
+      </h3>
+      <p data-i18n="tl_analyst_desc">{t.tl_analyst_desc}</p>
+    </li>
+    <li class="timeline-item">
+      <div class="timeline-point"></div>
+      <time data-i18n="tl_dec2019">{t.tl_dec2019}</time>
+      <h3 class="texto-destacado" data-i18n="tl_school_title">
+        {t.tl_school_title}
+      </h3>
+      <p data-i18n="tl_school_desc">{t.tl_school_desc}</p>
+    </li>
+  </ul>
+</section>

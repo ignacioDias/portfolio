@@ -5,7 +5,7 @@
     "description": "Compilador para un lenguaje de programación propio, implementado de punta a punta con Bison y Flex, abarcando análisis léxico, sintáctico y generación de código.",
     "description_en": "Compiler for a custom programming language, implemented end-to-end with Bison and Flex, covering lexical analysis, parsing and code generation.",
     "github": "https://github.com/ignacioDias/final-project-compilador",
-    "image": "src/compiler.webp",
+    "image": "/images/compiler.webp",
     "tags": [
       "C_LANGUAGE"
     ]
@@ -16,7 +16,7 @@
     "description": "Sistema integral de gestión para clínicas veterinarias. Backend desarrollado en Golang y PostgreSQL, con frontend en JavaScript vanilla.",
     "description_en": "Comprehensive management system for veterinary clinics. Backend built with Golang and PostgreSQL, with a vanilla JavaScript frontend.",
     "github": "https://github.com/ignacioDias/vet-system",
-    "image": "src/vet.webp",
+    "image": "/images/vet.webp",
     "tags": [
       "GOLANG",
       "POSTGRES",
@@ -30,7 +30,7 @@
     "description": "Tesis de grado: plataforma educativa desarrollada con Node.js que introduce a los niños en el mundo de la programación mediante Blockly de Google, fomentando el aprendizaje a través del dibujo y la lógica computacional.",
     "description_en": "Undergraduate thesis: an educational platform built with Node.js that introduces children to programming through Google's Blockly, encouraging learning through drawing and computational logic.",
     "github": "https://github.com/ignacioDias/drawing-with-blockly",
-    "image": "src/tesis.webp",
+    "image": "/images/tesis.webp",
     "tags": [
       "JS",
       "NODE"
@@ -42,7 +42,7 @@
     "description": "Modelo de lenguaje entrenado desde cero en Python para la clasificación automática de correos electrónicos, diferenciando de manera precisa el spam de los mensajes legítimos.",
     "description_en": "Language model trained from scratch in Python for automatic email classification, accurately distinguishing spam from legitimate messages.",
     "github": "https://github.com/ignacioDias/spam-detector-llm",
-    "image": "src/llm.webp",
+    "image": "/images/llm.webp",
     "tags": [
       "PYTHON"
     ]
@@ -53,7 +53,7 @@
     "description": "Plataforma de reservas cinematográficas que permite consultar la cartelera, gestionar proyecciones y realizar reservas en tiempo real.",
     "description_en": "Movie reservation platform that lets users browse the listings, manage screenings and make reservations in real time.",
     "github": "https://github.com/ignacioDias/movie-reservation-sys",
-    "image": "src/cinema.webp",
+    "image": "/images/cinema.webp",
     "tags": [
       "GOLANG",
       "REDIS",
@@ -68,7 +68,7 @@
     "description": "Aplicación web para editar y visualizar archivos Markdown. Backend en Golang con PostgreSQL y Redis orquestados mediante Docker, y frontend en JavaScript vanilla.",
     "description_en": "Web application for editing and previewing Markdown files. Backend in Golang with PostgreSQL and Redis orchestrated via Docker, and a vanilla JavaScript frontend.",
     "github": "https://github.com/ignacioDias/md-note-taking",
-    "image": "src/mdeditor.webp",
+    "image": "/images/mdeditor.webp",
     "tags": [
       "GOLANG",
       "POSTGRES",

@@ -1,0 +1,33 @@
+---
+import { translations } from "../i18n/translations.js";
+
+const t = translations.es;
+---
+
+<header class="header">
+  <nav
+    class="nav"
+    aria-label={t.nav_main}
+    data-i18n-aria-label="nav_main"
+  >
+    <a href="#presentacion" data-i18n="nav_home">{t.nav_home}</a>
+    <a href="#projects" data-i18n="nav_projects">{t.nav_projects}</a>
+    <a href="#academic-background" data-i18n="nav_education">
+      {t.nav_education}
+    </a>
+    <a href="#about-me" data-i18n="nav_about">{t.nav_about}</a>
+    <button type="button" class="mail-btn nav-mail-btn" data-i18n="nav_contact">
+      {t.nav_contact}
+    </button>
+    <button
+      type="button"
+      id="lang-toggle"
+      class="lang-toggle"
+      aria-label={t.lang_switch_label}
+      aria-pressed="false"
+    >
+      <span class="lang-option lang-option-es">ES</span>
+      <span class="lang-option lang-option-en">EN</span>
+    </button>
+  </nav>
+</header>

@@ -1,0 +1,16 @@
+---
+import { translations } from "../i18n/translations.js";
+
+const t = translations.es;
+---
+
+<div
+  id="toast-mail"
+  role="status"
+  aria-live="polite"
+  class="link-boton"
+  data-i18n="toast_copied"
+  style="display:none; position:fixed; bottom:32px; left:50%; transform:translateX(-50%); z-index:1000;"
+>
+  {t.toast_copied}
+</div>

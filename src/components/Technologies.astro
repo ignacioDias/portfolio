@@ -1,0 +1,54 @@
+---
+import { translations } from "../i18n/translations.js";
+
+const t = translations.es;
+
+const technologies = [
+  {
+    tech: "JavaScript",
+    labelKey: "filter_js",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+  },
+  {
+    tech: "C_LANGUAGE",
+    labelKey: "filter_c",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
+  },
+  {
+    tech: "Go",
+    labelKey: "filter_go",
+    icon: "https://devicon-website.vercel.app/api/go/original.svg",
+  },
+  {
+    tech: "Java",
+    labelKey: "filter_java",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+  },
+  {
+    tech: "Python",
+    labelKey: "filter_python",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+  },
+  {
+    tech: "POSTGRES",
+    labelKey: "filter_postgres",
+    icon: "https://devicon-website.vercel.app/api/postgresql/original.svg",
+  },
+];
+---
+
+<div class="technologies">
+  {
+    technologies.map(({ tech, labelKey, icon }) => (
+      <button
+        type="button"
+        data-tech={tech}
+        aria-label={t[labelKey]}
+        data-i18n-aria-label={labelKey}
+        aria-pressed="false"
+      >
+        <img src={icon} alt="" aria-hidden="true" />
+      </button>
+    ))
+  }
+</div>

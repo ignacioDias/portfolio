@@ -1,0 +1,38 @@
+---
+import { translations } from "../i18n/translations.js";
+
+const t = translations.es;
+---
+
+<section id="about-me">
+  <h2 class="section-heading">
+    <svg
+      class="icon"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      stroke-width="2"
+      stroke="currentColor"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path>
+      <path d="M6 21v-2a4 4 0 0 1 4 -4h4"></path>
+      <path d="M15 19l2 2l4 -4"></path>
+    </svg>
+    <span data-i18n="heading_about">{t.heading_about}</span>
+  </h2>
+  <div class="about-me-layout">
+    <img
+      src="/images/ignacio.webp"
+      alt="Ignacio Dias Gundin"
+      class="about-me-img"
+    />
+    <div class="about-me-text">
+      <p data-i18n-html="about_p1" set:html={t.about_p1}></p>
+      <p data-i18n-html="about_p2" set:html={t.about_p2}></p>
+    </div>
+  </div>
+</section>
