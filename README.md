@@ -2,7 +2,7 @@
 
 Portfolio personal de [Ignacio Dias Gundin](https://ignaciodias.dev), desarrollador backend y estudiante de la Licenciatura en Ciencias de la Computación en la Universidad Nacional de Río Cuarto.
 
-Sitio estático en vivo: [idias.me](https://ignaciodias.dev)
+Sitio estático en vivo: [ignaciodias.dev](https://ignaciodias.dev)
 
 ## Tecnologías
 
