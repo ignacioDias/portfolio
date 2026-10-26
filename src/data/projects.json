@@ -11,17 +11,15 @@
     ]
   },
   {
-    "title": "Vet System",
-    "title_en": "Vet System",
-    "description": "Sistema integral de gestión para clínicas veterinarias. Backend desarrollado en Golang y PostgreSQL, con frontend en JavaScript vanilla.",
-    "description_en": "Comprehensive management system for veterinary clinics. Backend built with Golang and PostgreSQL, with a vanilla JavaScript frontend.",
-    "github": "https://github.com/ignacioDias/vet-system",
-    "image": "/images/vet.webp",
+    "title": "Letterbox",
+    "title_en": "Letterbox",
+    "description": "Backend de una plataforma social de reseñas cinematográficas desarrollada con Golang y PostgreSQL. Incluye autenticación mediante sesiones y cookies, gestión de usuarios, seguimiento y bloqueo de perfiles, reseñas con valoraciones y reacciones, integración con TMDB y caché de películas.",
+    "description_en": "Backend for a social movie-rating platform built with Golang and PostgreSQL. Features cookie-based session authentication, user management, following and blocking, movie reviews and reactions, TMDB integration, and movie caching.",
+    "github": "https://github.com/ignacioDias/letterbox",
+    "image": "/images/letterbox.webp",
     "tags": [
       "GOLANG",
-      "POSTGRES",
-      "JS",
-      "HTML"
+      "POSTGRES"
     ]
   },
   {
