@@ -1,4 +1,61 @@
-import { getLang, initLanguage, setLanguage, t } from "./i18n.js";
+import {
+  getLang,
+  initLanguage,
+  onLanguageChange,
+  setLanguage,
+  t,
+} from "./i18n.js";
+
+const THEME_KEY = "portfolio-theme";
+
+function getTheme() {
+  return document.documentElement.getAttribute("data-theme") === "light"
+    ? "light"
+    : "dark";
+}
+
+function applyTheme(theme) {
+  const isLight = theme === "light";
+  document.documentElement.setAttribute(
+    "data-theme",
+    isLight ? "light" : "dark",
+  );
+
+  const toggle = document.getElementById("theme-toggle");
+  if (toggle) {
+    const labelKey = isLight ? "theme_switch_dark" : "theme_switch_light";
+    const label = t(labelKey);
+    toggle.setAttribute("aria-pressed", isLight ? "true" : "false");
+    toggle.setAttribute("aria-label", label);
+    toggle.setAttribute("title", label);
+  }
+
+  const meta = document.querySelector('meta[name="theme-color"]');
+  if (meta) meta.setAttribute("content", isLight ? "#ffffff" : "#0e0e0e");
+}
+
+function initTheme() {
+  try {
+    applyTheme(localStorage.getItem(THEME_KEY) === "light" ? "light" : "dark");
+  } catch {
+    applyTheme("dark");
+  }
+
+  const toggle = document.getElementById("theme-toggle");
+  if (!toggle) return;
+
+  toggle.addEventListener("click", () => {
+    const next = getTheme() === "dark" ? "light" : "dark";
+    applyTheme(next);
+    try {
+      localStorage.setItem(THEME_KEY, next);
+    } catch {
+      /* ignore */
+    }
+  });
+
+  onLanguageChange(() => applyTheme(getTheme()));
+}
 
 function initMailButtons() {
   const mailBtns = document.getElementsByClassName("mail-btn");
@@ -104,6 +161,7 @@ function initTechnologyFilter() {
 
 function boot() {
   initLanguage();
+  initTheme();
   initMailButtons();
   initLanguageToggle();
   initTechnologyFilter();

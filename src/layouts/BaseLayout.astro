@@ -44,6 +44,15 @@ const personSchema = {
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Ignacio Dias Gundin" />
     <meta name="theme-color" content="#0e0e0e" />
+    <script is:inline>
+      try {
+        if (localStorage.getItem("portfolio-theme") === "light") {
+          document.documentElement.setAttribute("data-theme", "light");
+          const meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) meta.setAttribute("content", "#ffffff");
+        }
+      } catch (e) {}
+    </script>
     <link rel="canonical" href={canonical.href} />
 
     <meta property="og:type" content="website" />

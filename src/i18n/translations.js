@@ -57,6 +57,8 @@ export const translations = {
     footer_nav: "Navegación del pie de página",
     toast_copied: "¡Correo copiado!",
     lang_switch_label: "Cambiar idioma",
+    theme_switch_light: "Cambiar a modo claro",
+    theme_switch_dark: "Cambiar a modo oscuro",
   },
 
   en: {
@@ -115,5 +117,7 @@ export const translations = {
     footer_nav: "Footer navigation",
     toast_copied: "Email copied!",
     lang_switch_label: "Change language",
+    theme_switch_light: "Switch to light mode",
+    theme_switch_dark: "Switch to dark mode",
   },
 };
