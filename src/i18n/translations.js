@@ -50,7 +50,7 @@ export const translations = {
       "Con especialidad en Ciencias Sociales, una formación que fortaleció mis habilidades de análisis, comunicación y comprensión de problemas, complementando mi desarrollo posterior en computación.",
 
     about_p1:
-      "Actualmente curso el <strong>quinto año</strong> de la Licenciatura en Ciencias de la Computación en la Universidad Nacional de Río Cuarto. Me encuentro desarrollando mi <strong>tesis de grado</strong> y preparando los finales pendientes, con el objetivo de finalizar la carrera el próximo año. Durante mi formación académica he adquirido conocimientos en <strong>algoritmos, estructuras de datos, bases de datos y desarrollo de software</strong>, entre otras áreas. Complemento estos conocimientos con proyectos personales y cursos online, que me permiten profundizar lo aprendido y continuar desarrollando mis habilidades.",
+      "Actualmente <strong>finalicé</strong> el cursado de la Licenciatura en Ciencias de la Computación en la Universidad Nacional de Río Cuarto. Me encuentro desarrollando mi <strong>tesis de grado</strong> y preparando los finales pendientes, con el objetivo de finalizar la carrera lo antes posible. Durante mi formación académica he adquirido conocimientos en <strong>algoritmos, estructuras de datos, bases de datos y desarrollo de software</strong>, entre otras áreas. Complemento estos conocimientos con proyectos personales y cursos online, que me permiten profundizar lo aprendido y continuar desarrollando mis habilidades.",
     about_p2:
       "Tengo especial interés en el desarrollo <strong>backend</strong> y busco seguir creciendo profesionalmente, aplicar mis conocimientos en proyectos reales y adquirir experiencia en el desarrollo de software.",
 
@@ -110,7 +110,7 @@ export const translations = {
       "With a specialization in Social Sciences, a training that strengthened my analysis, communication and problem-solving skills, complementing my later development in computing.",
 
     about_p1:
-      "I am currently in my <strong>fifth year</strong> of the Bachelor's Degree in Computer Science at the Universidad Nacional de Río Cuarto. I am working on my <strong>undergraduate thesis</strong> and preparing the remaining final exams, aiming to finish my degree next year. Throughout my academic training I have gained knowledge in <strong>algorithms, data structures, databases and software development</strong>, among other areas. I complement this knowledge with personal projects and online courses, which allow me to deepen what I have learned and keep developing my skills.",
+      "I've <strong>completed</strong> the coursework of the Bachelor's Degree in Computer Science at the Universidad Nacional de Río Cuarto. I am working on my <strong>undergraduate thesis</strong> and preparing the remaining final exams, aiming to finish my degree. Throughout my academic training I have gained knowledge in <strong>algorithms, data structures, databases and software development</strong>, among other areas. I complement this knowledge with personal projects and online courses, which allow me to deepen what I have learned and keep developing my skills.",
     about_p2:
       "I have a special interest in <strong>backend</strong> development and I seek to keep growing professionally, apply my knowledge to real projects and gain experience in software development.",
 
