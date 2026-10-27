@@ -19,7 +19,8 @@
     "image": "/images/letterbox.webp",
     "tags": [
       "GOLANG",
-      "POSTGRES"
+      "POSTGRES",
+      "VALKEY"
     ]
   },
   {
