@@ -20,7 +20,8 @@
     "tags": [
       "GOLANG",
       "POSTGRES",
-      "VALKEY"
+      "VALKEY",
+      "DOCKER"
     ]
   },
   {
@@ -32,10 +33,11 @@
     "image": "/images/tesis.webp",
     "tags": [
       "JS",
-      "NODE"
+      "NODE",
+      "DOCKER"
     ]
   },
-    {
+  {
     "title": "Spam Detector - LLM From Scratch",
     "title_en": "Spam Detector - LLM From Scratch",
     "description": "Modelo de lenguaje entrenado desde cero en Python para la clasificación automática de correos electrónicos, diferenciando de manera precisa el spam de los mensajes legítimos.",
@@ -58,10 +60,11 @@
       "REDIS",
       "POSTGRES",
       "JS",
-      "HTML"
+      "HTML",
+      "DOCKER"
     ]
   },
-    {
+  {
     "title": "Markdown Editor",
     "title_en": "Markdown Editor",
     "description": "Aplicación web para editar y visualizar archivos Markdown. Backend en Golang con PostgreSQL y Redis orquestados mediante Docker, y frontend en JavaScript vanilla.",
@@ -72,8 +75,8 @@
       "GOLANG",
       "POSTGRES",
       "JS",
-      "HTML"
-
+      "HTML",
+      "DOCKER"
     ]
   }
 ]

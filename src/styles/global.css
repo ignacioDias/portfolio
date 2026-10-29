@@ -394,6 +394,7 @@ section,
   font-family: var(--font-headline);
   font-size: 0.8rem;
   font-weight: 700;
+  line-height: 1.2;
   letter-spacing: -0.01em;
   border-radius: var(--radius-sm);
   background: var(--surface-high);
@@ -666,6 +667,9 @@ section,
 }
 .bg-cyan {
   background-color: #00ADD8; 
+}
+.bg-docker {
+  background-color: #2496ED;
 }
 .text-white {
   color: #fff;
