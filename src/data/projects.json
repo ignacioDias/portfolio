@@ -13,8 +13,8 @@
   {
     "title": "Letterbox",
     "title_en": "Letterbox",
-    "description": "Backend de una plataforma social de reseñas cinematográficas desarrollada con Golang y PostgreSQL. Incluye autenticación mediante sesiones y cookies, gestión de usuarios, seguimiento y bloqueo de perfiles, reseñas con valoraciones y reacciones, integración con TMDB y caché de películas.",
-    "description_en": "Backend for a social movie-rating platform built with Golang and PostgreSQL. Features cookie-based session authentication, user management, following and blocking, movie reviews and reactions, TMDB integration, and movie caching.",
+    "description": "Backend de una plataforma social de reseñas cinematográficas desarrollada con Golang y PostgreSQL. Incluye autenticación mediante sesiones y cookies junto con inicio de sesión con Google OAuth 2.0, gestión de usuarios, seguimiento y bloqueo de perfiles, reseñas con valoraciones y reacciones, integración con TMDB y caché de películas.",
+    "description_en": "Backend for a social movie-rating platform built with Golang and PostgreSQL. Features cookie-based session authentication alongside Google OAuth 2.0 login, user management, following and blocking, movie reviews and reactions, TMDB integration, and movie caching.",
     "github": "https://github.com/ignacioDias/letterbox",
     "image": "/images/letterbox.webp",
     "tags": [
@@ -49,7 +49,7 @@
     ]
   },
   {
-    "title": "Cinema System",
+    "title": "Sistema para Cines",
     "title_en": "Cinema System",
     "description": "Plataforma de reservas cinematográficas que permite consultar la cartelera, gestionar proyecciones y realizar reservas en tiempo real.",
     "description_en": "Movie reservation platform that lets users browse the listings, manage screenings and make reservations in real time.",
