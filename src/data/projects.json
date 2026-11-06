@@ -11,8 +11,8 @@
     ]
   },
   {
-    "title": "Letterbox",
-    "title_en": "Letterbox",
+    "title": "Plataforma de Reseñas de Cine",
+    "title_en": "Movie Review Platform",
     "description": "Backend de una plataforma social de reseñas cinematográficas desarrollada con Golang y PostgreSQL. Incluye autenticación mediante sesiones y cookies junto con inicio de sesión con Google OAuth 2.0, gestión de usuarios, seguimiento y bloqueo de perfiles, reseñas con valoraciones y reacciones, integración con TMDB y caché de películas.",
     "description_en": "Backend for a social movie-rating platform built with Golang and PostgreSQL. Features cookie-based session authentication alongside Google OAuth 2.0 login, user management, following and blocking, movie reviews and reactions, TMDB integration, and movie caching.",
     "github": "https://github.com/ignacioDias/letterbox",
@@ -38,7 +38,7 @@
     ]
   },
   {
-    "title": "Spam Detector - LLM From Scratch",
+    "title": "Detector de Spam - LLM desde Cero",
     "title_en": "Spam Detector - LLM From Scratch",
     "description": "Modelo de lenguaje entrenado desde cero en Python para la clasificación automática de correos electrónicos, diferenciando de manera precisa el spam de los mensajes legítimos.",
     "description_en": "Language model trained from scratch in Python for automatic email classification, accurately distinguishing spam from legitimate messages.",
@@ -65,7 +65,7 @@
     ]
   },
   {
-    "title": "Markdown Editor",
+    "title": "Editor de Markdown",
     "title_en": "Markdown Editor",
     "description": "Aplicación web para editar y visualizar archivos Markdown. Backend en Golang con PostgreSQL y Redis orquestados mediante Docker, y frontend en JavaScript vanilla.",
     "description_en": "Web application for editing and previewing Markdown files. Backend in Golang with PostgreSQL and Redis orchestrated via Docker, and a vanilla JavaScript frontend.",
