@@ -34,6 +34,7 @@ export const translations = {
     heading_projects: "Proyectos",
     heading_education: "Formación Académica",
     heading_about: "Sobre mí",
+    heading_tech_stack: "Tecnologías",
 
     tl_present: "Presente",
     tl_degree_title: "Cursando la Licenciatura",
@@ -94,6 +95,7 @@ export const translations = {
     heading_projects: "Projects",
     heading_education: "Academic Background",
     heading_about: "About me",
+    heading_tech_stack: "Tech Stack",
 
     tl_present: "Present",
     tl_degree_title: "Completing the Bachelor's Degree",

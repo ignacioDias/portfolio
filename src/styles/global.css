@@ -745,6 +745,70 @@ section,
 }
 #about-me strong { color: var(--on-surface); font-weight: 600; }
 
+/* ── About Me: tech stack ──────────────────────────────────── */
+.tech-stack {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(var(--border-rgb), 0.25);
+}
+
+.tech-stack h3 {
+  font-family: var(--font-headline);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--secondary);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.tech-stack-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.tech-stack-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.8rem;
+  font-family: var(--font-headline);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--on-surface-dim);
+  background: var(--surface-low);
+  border: 1px solid rgba(var(--border-rgb), 0.35);
+  border-radius: var(--radius-md);
+  transition: background 0.2s, border-color 0.2s, color 0.2s, transform 0.15s;
+}
+
+.tech-stack-item:hover {
+  background: var(--surface-mid);
+  border-color: var(--tech-color, var(--primary));
+  color: var(--on-surface);
+  transform: translateY(-2px);
+  box-shadow: 0 0 12px color-mix(in srgb, var(--tech-color, var(--primary)) 40%, transparent);
+}
+
+.tech-stack-item:hover img {
+  filter: drop-shadow(0 0 4px color-mix(in srgb, var(--tech-color, var(--primary)) 55%, transparent));
+}
+
+.tech-stack-item img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+:root:not([data-theme="light"]) .tech-stack-item img[src*="github"] {
+  filter: invert(1);
+}
+
 /* ── Footer ────────────────────────────────────────────────── */
 footer {
   background: var(--footer-bg);

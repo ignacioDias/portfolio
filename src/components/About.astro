@@ -2,6 +2,23 @@
 import { translations } from "../i18n/translations.js";
 
 const t = translations.es;
+
+const technologies = [
+  { name: "Go", color: "#00ADD8", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" },
+  { name: "Python", color: "#3776AB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+  { name: "Java", color: "#F89820", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
+  { name: "C", color: "#00599C", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" },
+  { name: "Docker", color: "#2496ED", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+  { name: "Linux", color: "#FCC624", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" },
+  { name: "Bash", color: "#4EAA25", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" },
+  { name: "JavaScript", color: "#F7DF1E", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+  { name: "TypeScript", color: "#3178C6", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+  { name: "PostgreSQL", color: "#4169E1", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
+  { name: "Angular", color: "#DD0031", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg" },
+  { name: "Redis", color: "#DC382D", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" },
+  { name: "Git", color: "#F05032", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+  { name: "GitHub", color: "#8B949E", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
+];
 ---
 
 <section id="about-me">
@@ -34,5 +51,18 @@ const t = translations.es;
       <p data-i18n-html="about_p1" set:html={t.about_p1}></p>
       <p data-i18n-html="about_p2" set:html={t.about_p2}></p>
     </div>
+  </div>
+  <div class="tech-stack">
+    <h3 data-i18n="heading_tech_stack">{t.heading_tech_stack}</h3>
+    <ul class="tech-stack-list">
+      {
+        technologies.map(({ name, color, icon }) => (
+          <li class="tech-stack-item" style={`--tech-color: ${color}`}>
+            <img src={icon} alt="" aria-hidden="true" loading="lazy" />
+            <span>{name}</span>
+          </li>
+        ))
+      }
+    </ul>
   </div>
 </section>
